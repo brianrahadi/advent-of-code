@@ -1,0 +1,2416 @@
+<!doctype html>
+<html data-logging-endpoint="/d2l/lp/logger/provision?sessionToken=NjYwNiw1MDE1MTc" lang="en-ca" data-lang-default="en-ca" data-intl-overrides="{&quot;number&quot;:{&quot;patterns&quot;:{&quot;decimal&quot;:{&quot;negativePattern&quot;:&quot;-{number}&quot;},&quot;percent&quot;:{&quot;positivePattern&quot;:&quot;{number} %&quot;,&quot;negativePattern&quot;:&quot;-{number} %&quot;}},&quot;symbols&quot;:{&quot;decimal&quot;:&quot;.&quot;,&quot;group&quot;:&quot;,&quot;,&quot;negative&quot;:&quot;-&quot;,&quot;percent&quot;:&quot;%&quot;},&quot;groupSize&quot;:[3]},&quot;date&quot;:{&quot;hour24&quot;:false,&quot;calendar&quot;:{&quot;firstDayOfWeek&quot;:0,&quot;dayPeriods&quot;:{&quot;am&quot;:&quot;AM&quot;,&quot;pm&quot;:&quot;PM&quot;},&quot;months&quot;:{&quot;short&quot;:[&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;Jun&quot;,&quot;Jul&quot;,&quot;Aug&quot;,&quot;Sep&quot;,&quot;Oct&quot;,&quot;Nov&quot;,&quot;Dec&quot;,&quot;&quot;],&quot;long&quot;:[&quot;January&quot;,&quot;February&quot;,&quot;March&quot;,&quot;April&quot;,&quot;May&quot;,&quot;June&quot;,&quot;July&quot;,&quot;August&quot;,&quot;September&quot;,&quot;October&quot;,&quot;November&quot;,&quot;December&quot;,&quot;&quot;]},&quot;days&quot;:{&quot;short&quot;:[&quot;Sun&quot;,&quot;Mon&quot;,&quot;Tue&quot;,&quot;Wed&quot;,&quot;Thu&quot;,&quot;Fri&quot;,&quot;Sat&quot;]}},&quot;formats&quot;:{&quot;dateFormats&quot;:{&quot;short&quot;:&quot;M/d/yyyy&quot;},&quot;timeFormats&quot;:{&quot;short&quot;:&quot;h:mm tt&quot;,&quot;medium&quot;:&quot;h:mm tt&quot;,&quot;full&quot;:&quot;h:mm tt ZZZ&quot;}}}}" data-oslo="{&quot;batch&quot;:&quot;/d2l/api/oslo/13/batch&quot;,&quot;collection&quot;:&quot;/d2l/api/oslo/13/collection&quot;,&quot;version&quot;:&quot;W/\&quot;20.21.11.33544.2192262980\&quot;&quot;}" data-timezone="{&quot;name&quot;:&quot;Canada - Vancouver&quot;,&quot;identifier&quot;:&quot;America/Vancouver&quot;}" data-app-version="20.21.11" dir="ltr" data-telemetry-endpoint="https://prd.ca-central-1.telemetryservice.brightspace.com/api/events/" data-he-context="{&quot;activeOrgEnrollment&quot;:true,&quot;alignmentSwitch&quot;:true,&quot;insertElement&quot;:false,&quot;maxFileSize&quot;:2147483648,&quot;mentions&quot;:false,&quot;orgUnitId&quot;:&quot;204496&quot;,&quot;orgUnitPath&quot;:&quot;/content/enforced/204496-30443.202130/&quot;,&quot;pasteFormatting&quot;:&quot;prompt&quot;,&quot;sourceEditable&quot;:true,&quot;uploadFiles&quot;:false,&quot;viewFiles&quot;:false,&quot;wirisPath&quot;:&quot;/wiris/editorservice.aspx&quot;,&quot;wmodeOpaque&quot;:true}" data-css-vars="{&quot;--d2l-branding-primary-color&quot;:&quot;#f17d09&quot;}">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Grades - CPSC-2150-001 - Algrthms &amp; Data Strctrs II - Langara College</title>
+		<link rel="preconnect" href="https://s.brightspace.com/lib/bsi/20.21.11-188/" crossorigin>
+		<link rel="dns-prefetch" href="https://s.brightspace.com/lib/bsi/20.21.11-188/">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/20.21.11-188/unbundled/bsi-unbundled.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/20.21.11-188/unbundled/icon.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/20.21.11-188/unbundled/d2l-table.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/20.21.11-188/unbundled/d2l-navigation.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/20.21.11-188/unbundled/d2l-navigation-main-header.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/20.21.11-188/unbundled/d2l-navigation-button-notification-icon.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/20.21.11-188/unbundled/d2l-navigation-separator.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/20.21.11-188/unbundled/d2l-navigation-link-image.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/20.21.11-188/unbundled/dropdown.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/20.21.11-188/unbundled/dropdown-content.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/20.21.11-188/unbundled/d2l-navigation-button.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/20.21.11-188/unbundled/d2l-profile-image-base.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/20.21.11-188/unbundled/d2l-navigation-main-footer.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/20.21.11-188/unbundled/dropdown-menu.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/20.21.11-188/unbundled/menu.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/20.21.11-188/unbundled/menu-item-link.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/20.21.11-188/unbundled/menu-item.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/20.21.11-188/unbundled/d2l-navigation-band.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/20.21.11-188/unbundled/dropdown-more.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/20.21.11-188/unbundled/button-subtle.js" as="script" crossorigin="anonymous">
+		<script>
+		(function(){if('PerformanceLongTaskTiming' in window) {var g = window.__tti = {e:[]};g.o = new PerformanceObserver( function( l ){ g.e = g.e.concat( l.getEntries() ) });g.o.observe({ entryTypes:['longtask']})}})();
+		(function(){var client;var errors = [];window.addEventListener('d2l-logging-loaded', function(e) {client = e.detail.createClient('uncaught-errors', { shouldThrottle: true });if (errors.length > 0) {client.legacyErrorBatch(errors);}});var handleError = function(data) {if (client) {client.legacyError(data.message, data.source, data.lineno, data.colno, data.error);} else {errors.push(data);}};window.addEventListener('error', function(e) {handleError({ message: e.message, source: e.source, lineno: e.lineno, colno: e.colno, error: e.error });});window.addEventListener('unhandledrejection', function(e) {handleError({message: e.reason ? (e.reason.message ? e.reason.message : e.reason) : '',error: e.reason});});})();
+		(function(){try { localStorage.setItem('XSRF.Token','eMZpjYudDKxyMRV4tsdhaeb6Sjm88niB');localStorage.setItem('Session.UserId','501517');} catch(e) {}})();
+		(function(){if(window['FontFace'] === undefined) { window.d2lFontsLoaded = true; return; }window.d2lFontsLoaded = false;Promise.all(['400','700'].map(function(w) {return new FontFace('Lato','url(https://s.brightspace.com/lib/fonts/0.5.0/assets/Lato-' + w + '.woff2) format("woff2")', {style:'normal',weight: w}).load();})).then(function() {window.d2lFontsLoaded = true;if(window['D2L'] && window.D2L['FontsLoaded']) { window.D2L.FontsLoaded(); }});})();
+		(function(){
+				D2L = window.D2L || {}; D2L.LP = D2L.LP || {}; D2L.LP.Web = D2L.LP.Web || {}; D2L.LP.Web.UI = D2L.LP.Web.UI || {};
+				D2L.LP.Web.UI.Flags = {
+					ListedFlags: {"rubric-indirect-grading-remove-legacy-experience":true,"rubrics-lit":false,"US112810-date-time-components":true,"f18367-html-block-component":false},
+					Flag: function(feature, defaultValue) {
+						const featureValue = D2L.LP.Web.UI.Flags.ListedFlags[feature];
+						return featureValue !== undefined ? featureValue : defaultValue;
+					}
+				};
+			})();
+		</script>
+		<link rel="icon" href="https://s.brightspace.com/lib/favicon/2.0.0/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="https://s.brightspace.com/lib/bsi/20.21.11-188/bsi.css" />
+		<link rel="stylesheet" type="text/css" href="/d2l/common/css/D2L.LP.Web.Core.css?v=20.21.11.33544" />
+		<link rel="stylesheet" type="text/css" href="/d2l/common/css/D2L.LP.Web.Controls.Grid.css?v=20.21.11.33544" />
+		<style>
+			html { font-size:20px; }
+		</style>
+		<link rel="stylesheet" type="text/css" href="/d2l/lms/grades/static/css/main.css?v=20.21.11.33544" />
+		<style>
+			.cDark { background-color:#6E6E6E;}
+			.cDark a, .cDark a:link, .cDark a:visited, .cDark a:hover {color:#ffffff;font-weight:normal;}
+			.cLight { background-color:#333333;}
+			.cLight a, .cLight a:link, .cLight a:visited, .cLight a:hover {color:#ffffff;font-weight:normal;}
+			.cSoft { background-color:#EEEEEE;}
+			.cSoft a, .cSoft a:link, .cSoft a:visited, .cSoft a:hover {color:#666666;font-weight:normal;}
+			.d2l-branding-navigation-background-color {background-color: #FFFFFF;}
+			.d2l_1_5_462 {margin:10px;}
+			.d2l_1_8_368 {width:500px;}
+			.d2l_1_9_382 {background-position:left top;}
+			.d2l_1_10_219 {padding:1em;}
+			.d2l_1_11_265 {background-image:url('https://s.brightspace.com/lib/bsi/20.21.11-188/images/tier1/alert.svg');}
+			.d2l_1_12_210 {background-position:right top;}
+			.d2l_1_13_231 {padding-right:31px;}
+			.d2l_1_14_532 {min-height:18px;}
+			.d2l_1_15_48 {background-image:url('https://s.brightspace.com/lib/bsi/20.21.11-188/images/tier1/check.svg');}
+			.d2l_1_16_0 {padding:3.4em;}
+		</style>
+		<script>
+			var Global = {OrgUnitId:204496,OrgId:6606,OrgName:'Langara College',OrgUnitName:'CPSC-2150-001 - Algrthms & Data Strctrs II',OrgUnitCode:'30443.202130',OrgUnitTypeId:3,OrgDefinedId:'100362278',OrgUnitPath:'\/content\/enforced\/204496-30443.202130\/',FirstName:'Brian',LastName:'Rahadi',UserName:'brahadi00',UserId:501517,RoleId:103,RoleCode:'01',ImageSetId:0,ImageVersion:'20.21.11.33544',AssemblyVersion:'20.21.11.33544',Language:{LanguageId:13,LanguageVersion:'20.21.11.33544'},Culture:{IsRightToLeft:0},Preferences:{UseNonModalDialogs:0}};
+			var BrowserInfo = {browserType:'Chrome',Type:10,MajorVersion:90,MinorVersion:0};
+		</script>
+		<script src="https://s.brightspace.com/lib/jquery/2.2.4/jquery.min.js"></script>
+		<script src="https://s.brightspace.com/lib/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script src="https://s.brightspace.com/lib/bsi/20.21.11-188/bsi.js"></script>
+		<script>
+		window.__elasticRumOnload = function() {var apm = elasticApm.init({serviceName: 'LMS',serverUrl: 'https://d2l-elasticrum.apm.us-east-1.aws.cloud.es.io/',transactionSampleRate: 0,disableInstrumentations: ['xmlhttprequest','fetch','eventtarget','history']});apm.addLabels({ "orgName": "langara"});apm.addLabels({ "instanceName": "langara"});};
+		</script>
+		<script async="async" onload="window.__elasticRumOnload()" src="https://s.brightspace.com/lib/elastic-apm-rum/5.5.0/elastic-apm-rum.umd.min.js"></script>
+		<script>
+		window.__ttiOnload = function() {ttiPolyfill.getFirstConsistentlyInteractive().then(function(tti) {if (tti) {document.dispatchEvent(new CustomEvent('d2l-performance-measure', {bubbles: true,detail: { name: 'd2l.page.tti', value: {name: 'd2l.page.tti', entryType: 'tti-polyfill', duration: tti, startTime: 0} }}));}});};
+		</script>
+		<script async="async" onload="window.__ttiOnload()" src="https://s.brightspace.com/lib/tti-polyfill/0.2.2/tti-polyfill-global.js"></script>
+		<script src="/d2l/common/js/babel/D2L.LP.Web.Core.js?v=20.21.11.33544"></script>
+		<script src="/d2l/common/js/babel/D2L.LP.Web.Controls.Grid.js?v=20.21.11.33544"></script>
+		<script src="/d2l/lms/grades/static/include/constants.js?v=20.21.11.33544"></script>
+		<script src="/d2l/lms/grades/static/include/grades.js?v=20.21.11.33544"></script>
+		<script src="/d2l/lms/grades/static/include/grade_list_dialog.js?v=20.21.11.33544"></script>
+		<script src="/d2l/lms/grades/static/include/grade_object_render.js?v=20.21.11.33544"></script>
+		<script src="/d2l/lms/grades/static/include/my_grades.js?v=20.21.11.33544"></script>
+		<script>
+			D2L.Serialization.JsonDeserializerMin.Deserialize(["c0faab462aec438fa9cbf2a5c2cd8d3b",257,0,[{"ctl_5":[["dg_showgrade"],[]],"ctl_11":[["dg_showgrade","ctl_2"],[]],"ctl_12":[["dg_showgrade","ctl_5"],[]],"ctl_13":[["dg_showgrade","ctl_8"],[]],"ctl_14":[["dg_showgrade","ctl_11"],[]],"ctl_15":[["dg_showgrade","ctl_14"],[]],"ctl_16":[["dg_showgrade","ctl_17"],[]],"ctl_17":[["dg_showgrade","ctl_20"],[]],"ctl_18":[["dg_showgrade","ctl_23"],[]],"ctl_19":[["dg_showgrade","ctl_26"],[]],"ctl_20":[["dg_showgrade","ctl_29"],[]],"ctl_21":[["dg_showgrade","ctl_32"],[]],"ctl_22":[["dg_showgrade","ctl_35"],[]],"ctl_23":[["dg_showgrade","ctl_38"],[]],"ctl_24":[["dg_showgrade","ctl_41"],[]],"ctl_25":[["dg_showgrade","ctl_44"],[]],"ctl_26":[["dg_showgrade","ctl_47"],[]],"ctl_27":[["dg_showgrade","ctl_50"],[]],"ctl_28":[["dg_showgrade","ctl_53"],[]],"ctl_29":[["dg_showgrade","ctl_56"],[]],"ctl_30":[["dg_showgrade","ctl_59"],[]],"ctl_31":[["dg_showgrade","ctl_62"],[]],"ctl_32":[["dg_showgrade","ctl_65"],[]],"ctl_33":[["dg_showgrade","ctl_68"],[]],"ctl_34":[["dg_showgrade","ctl_71"],[]],"ctl_35":[["dg_showgrade","ctl_74"],[]],"ctl_36":[["dg_showgrade","ctl_77"],[]],"ctl_37":[["dg_showgrade","ctl_80"],[]],"ctl_38":[["dg_showgrade","ctl_83"],[]],"ctl_39":[["dg_showgrade","ctl_86"],[]],"ctl_40":[["dg_showgrade","ctl_89"],[]],"ctl_41":[["dg_showgrade","ctl_92"],[]],"ctl_42":[["dg_showgrade","ctl_95"],[]],"ctl_43":[["dg_showgrade","ctl_98"],[]],"ctl_44":[["dg_showgrade","ctl_101"],[]],"ctl_45":[["dg_showgrade","ctl_104"],[]],"ctl_46":[["dg_showgrade","ctl_107"],[]],"ctl_47":[["dg_showgrade","ctl_110"],[]],"ctl_48":[["dg_showgrade","ctl_113"],[]],"ctl_49":[["dg_showgrade","ctl_116"],[]],"ctl_50":[["dg_showgrade","ctl_119"],[]],"ctl_51":[["dg_showgrade","ctl_122"],[]],"ctl_52":[["dg_showgrade","ctl_125"],[]],"ctl_53":[["dg_showgrade","ctl_128"],[]]}],[[]],[[]],[[],0],["^([\\(-]*(([01234567890123456789]?[01234567890123456789]?([01234567890123456789](,[01234567890123456789][01234567890123456789][01234567890123456789])*)))(\\.[01234567890123456789]+)?[\\)-]*)$|^([\\(-]*[01234567890123456789]*\\.?[01234567890123456789]+[\\)-]*)$","^([\\(-]*(([01234567890123456789]?[01234567890123456789]?([01234567890123456789](,[01234567890123456789][01234567890123456789][01234567890123456789])*)?))[\\)-]*)$|^([\\(-]*[01234567890123456789]+[\\)-]*)$",0,".",1,"-",",",["0","1","2","3","4","5","6","7","8","9"],"%",0,0,0,[3]],[],0,{"ClassName":"D2L.Util.DateTime","Year":2021,"Month":12,"Day":20,"Hour":11,"Minute":41,"Second":26,"Millisecond":933}],D2L.UI);
+			D2L.Language.InitLang({'standard.buttons':{'btnadd':'Add','btnreset':'Reset','btnreplace':'Replace','btnrename':'Rename','btnremoveselected':'Remove Selected','btnremove':'Remove','btnrefresh':'Refresh','btnrecord':'Record','btnpublishprocessing':'Publishing...','btnpublish1':'Publish','btnpublish':'Publish to LOR','btnproceed':'Proceed','btnprint':'Print','btnprevious':'Previous ','btnpreview':'Preview','btnoverwrite':'Overwrite','btnokay':'OK','btnok':'OK','btnresetprocessing':'Resetting...','btnretract':'Retract','btnreturn':'Return','btnrevert':'Undo Unsaved Changes','btnupload':'Upload','btnupdateprocessing':'Updating...','btnupdate':'Update','btnsubmit':'Submit','btnstart':'Start','btnskip':'Skip','btnshowall':'Show All','btnset':'Set','btnno':'No','btnsend':'Send','btnsearch':'Search','btnsaveprocessing':'Saving...','btnsavedraft':'Save Draft','btnsaveandnew':'Save and New','btnsaveandcopy':'Save and Copy','btnsaveandclose':'Save and Close','btnsave':'Save','btnrun':'Run','btnselectcurrentfolder':'Select Current Folder','btnnext':'Next','btnnew':'New','btnlistall':'List All','btnclearlist':'Clear List','btnclearchanges':'Clear Changes','btnclearall':'Clear All','btnclear':'Clear','btnchangepassword':'Change Password','btnchangelanguage':'Change Language','btnchange':'Change','btncancelprocessing':'Canceling...','btnclose':'Close','btncancel':'Cancel','btnback':'Back','btnapplyprocessing':'Applying...','btnapply':'Apply','btnadmin':'Admin','btnaddselected':'Add Selected','btnaddprocessing':'Adding...','btnaddanother':'Add Another','btnaddandnew':'Add and New','btnbrowse':'Browse','btnview':'View','btnconfirm':'Confirm','btncopy':'Copy','btninsert':'Insert','btnimport':'Import','btnhome':'Home','btnhistory':'History','btngoback':'Go Back','btngo':'Go','btnfinish':'Finish','btnexport':'Export','btncontinue':'Continue','btnedit':'Edit','btndontsave':'Don\u0027t Save','btndone':'Done','btndeleteselected':'Delete Selected','btndeleteprocessing':'Deleting...','btndelete':'Delete','btncustomize':'Customize','btncreateprocessing':'Creating...','btncreate':'Create','btndownload':'Download','btnyes':'Yes'},'framework.dialog':{'altclosedialog':'Close this Dialog','altjumpbottom':'Jump to bottom of [0] dialog','altjumptop':'Jump to top of [0] dialog','altresizedialog':'Resize this Dialog','lblsaveconfirmationprimary':'This page has been edited.','lblsaveconfirmationsecondary':'Do you want to save the changes?','titconfirmation':'Confirmation','titerror':'Error','titinformation':'Information','titinputrequested':'Choose a Value','titprocessing':'Processing...','titsavechanges':'Save Changes','titwarning':'Warning'},'framework.messagearea':{'hdrerrors':'Errors','lblerrors':'There were [0] error(s) found in the information you submitted:','lblstatus1':'Saved successfully','lblstatus10':'Removed successfully','lblstatus11':'Enrolled successfully','lblstatus12':'Unenrolled successfully','lblstatus13':'Sent successfully','lblstatus2':'Deleted successfully','lblstatus3':'Created successfully','lblstatus4':'Reordered successfully','lblstatus5':'Copied successfully','lblstatus6':'Imported successfully','lblstatus7':'Exported successfully','lblstatus8':'Moved successfully','lblstatus9':'Added successfully'},'framework.grid':{'altcollapserow':'Collapse Row {subject}','txtselected':'[b][0][\/b] of [b][1][\/b] selected','txtnumitemssearch':'[0] search results.','txtnumitemsnosearch':'[0] items in the list.','txtdefaultemptytext':'No items found.','titselectrowsubject':'Select {subject}','titselectall':'Select all rows','optof':'[0] of [1]','lnkclearselection':'Clear Selection','lblperpage':'per[sp]page','lblpage':'Page','lblmustdosearchtext':'You must perform a search.','txtselectednototal':'[b][0][\/b] items selected','lblemptytext':'No items found.','altsorteddescending':'Sorted Descending','altsortedascending':'Sorted Ascending','altsortdescending':'Sort by [0] descending','altsortby':'Sort by [0]','altsortascending':'Sort by [0] ascending','altselectdescendants':'Select all within this item','altpreviouspage':'Previous Page','altnextpage':'Next Page','altexpandrow':'Expand Row {subject}','altexpandforothersortoptions':'Select for a list of sort options','altentry':'Entry [0]','hdrselect':'Select','txtselectioncolumn':'Selection column'}},{'standard.misc.txtloading':'Loading...','standard.misc.txtcopyright':'Powered by D2L Incorporated'});
+			D2L.Language.InitImg({'framework.messagearea':{'actstatus11':["0\/Framework.MessageArea.actStatus11.gif"],'actstatus12':["0\/Framework.MessageArea.actStatus12.gif"],'actstatus13':["0\/Framework.MessageArea.actStatus13.gif"],'actstatus3':["https:\/\/s.brightspace.com\/lib\/bsi\/20.21.11-188\/images\/tier1\/file-document.svg",18],'actstatus6':["0\/Framework.MessageArea.actStatus6.gif"],'actstatus7':["0\/Framework.MessageArea.actStatus7.gif"]},'framework.grid':{'actcollapse':["https:\/\/s.brightspace.com\/lib\/bsi\/20.21.11-188\/images\/tier1\/arrow-collapse.svg",18],'actexpand':["https:\/\/s.brightspace.com\/lib\/bsi\/20.21.11-188\/images\/tier1\/arrow-expand.svg",18],'actnextpage':["0\/Framework.Grid.actNextPage.gif",7,6],'actpreviouspage':["0\/Framework.Grid.actPreviousPage.gif",7,6],'actpreviouspage_deleteme':["0\/Framework.Grid.actPreviousPage_deleteme.gif",7,6],'actselectdescendants':["0\/Framework.Grid.actSelectDescendants.gif"],'infactive':["0\/Framework.Grid.infActive.png",6],'infinactive':["0\/Framework.Grid.infInactive.png",6],'infsortedascending':["https:\/\/s.brightspace.com\/lib\/bsi\/20.21.11-188\/images\/tier1\/arrow-toggle-up.svg",18],'infsorteddescending':["https:\/\/s.brightspace.com\/lib\/bsi\/20.21.11-188\/images\/tier1\/arrow-toggle-down.svg",18]}},{});
+			function d2l_Onload() {
+				D2L.WebComponentsReady.then(function() {
+					UI.OnPageLoad().Trigger();
+					D2L.C('GradeItems','grid_gradeitems');
+					
+				});
+			}
+			function d2l_Onunload() {
+				UI.OnPageUnload().Trigger();
+				D2L.GarbageCollection.Dispose();
+			}
+		</script>
+		</head>
+	<body id="d2l_body" onunload="d2l_Onunload();" onload="d2l_Onload();" class="vui-typography d2l-typography daylight d2l-body-unresolved">
+		<custom-style><style>html { --d2l-branding-primary-color: #f17d09; }</style></custom-style>
+		<header><button class="d2l-skipnav" id="d2l_skipnav">skip to main content</button>
+		<nav class="d2l-navigation-s d2l-branding-navigation-dark-foreground-color d2l-navigation-s-linkarea-no-color"><d2l-navigation><d2l-navigation-main-header><div class="d2l-navigation-header-left" slot="left"><div class="d2l-navigation-s-header-open-button-wrapper"><d2l-navigation-button-notification-icon icon="tier3:menu-hamburger" text="menu"></d2l-navigation-button-notification-icon></div><div class="d2l-navigation-s-header-logo-area d2l-navigation-s-header-no-home-icon"><d2l-navigation-separator class="d2l-navigation-s-logo-divider"></d2l-navigation-separator><div class="d2l-navigation-s-logo"><d2l-navigation-link-image src="/d2l/lp/navbars/6606/theme/viewimage/1495196/view?v=20.21.11.33544" text="My Home" href="/d2l/lp/ouHome/defaultHome.d2l" slim></d2l-navigation-link-image></div><d2l-navigation-separator class="d2l-navigation-s-title-divider"></d2l-navigation-separator><div class="d2l-navigation-s-title-container"><a class="d2l-navigation-s-link" href="/d2l/home/204496" title="CPSC-2150-001 - Algrthms &amp; Data Strctrs II  30443.202130">CPSC-2150-001 - Algrthms &amp; Data Strctrs II  30443.202130</a></div></div></div><div class="d2l-navigation-header-right" slot="right"><div class="d2l-navigation-s-course-menu"><d2l-dropdown no-auto-open><d2l-navigation-button-notification-icon class="d2l-dropdown-opener" icon="tier3:classes" text="Select a course..." data-prl="/d2l/lp/courseSelector/204496/InitPartial" data-prid="d2l_1_1_366"></d2l-navigation-button-notification-icon><d2l-dropdown-content max-width="800" min-width="450" no-padding vertical-offset="0"><div id="d2l_1_1_366" class="d2l-placeholder d2l-placeholder-live">
+		</div>
+		</d2l-dropdown-content></d2l-dropdown>
+		</div><d2l-navigation-separator class="d2l-navigation-s-course-menu-divider"></d2l-navigation-separator><div class="d2l-navigation-s-notifications"><div class="d2l-navigation-s-notifications-wrapper"><div class="d2l-navigation-s-notification" data-category="messages" data-aria-message="You have new Messages"><d2l-dropdown no-auto-open><d2l-navigation-button-notification-icon class="d2l-dropdown-opener" icon="tier3:email" text="Message alerts" data-prl="/d2l/MiniBar/204496/ActivityFeed/GetAlertsDaylight?Category=2" data-prid="d2l_1_2_613"></d2l-navigation-button-notification-icon><d2l-dropdown-content max-width="500" no-padding vertical-offset="0"><div id="d2l_1_2_613" class="d2l-placeholder d2l-placeholder-live">
+		</div>
+		</d2l-dropdown-content></d2l-dropdown>
+		</div><div class="d2l-navigation-s-notification" data-category="alerts" data-aria-message="You have new Subscriptions"><d2l-dropdown no-auto-open><d2l-navigation-button-notification-icon class="d2l-dropdown-opener" icon="tier3:discussions" text="Subscription alerts" data-prl="/d2l/MiniBar/204496/ActivityFeed/GetAlertsDaylight?Category=0" data-prid="d2l_1_3_192"></d2l-navigation-button-notification-icon><d2l-dropdown-content no-padding vertical-offset="0"><div id="d2l_1_3_192" class="d2l-placeholder d2l-placeholder-live">
+		</div>
+		</d2l-dropdown-content></d2l-dropdown>
+		</div><div class="d2l-navigation-s-notification" data-category="grades" data-aria-message="You have new Updates"><d2l-dropdown no-auto-open><d2l-navigation-button-notification-icon class="d2l-dropdown-opener" icon="tier3:notification-bell" text="Update alerts" data-prl="/d2l/MiniBar/204496/ActivityFeed/GetAlertsDaylight?Category=1" data-prid="d2l_1_4_640"></d2l-navigation-button-notification-icon><d2l-dropdown-content no-padding vertical-offset="0"><div id="d2l_1_4_640" class="d2l-placeholder d2l-placeholder-live">
+		</div>
+		</d2l-dropdown-content></d2l-dropdown>
+		</div></div><div class="d2l-navigation-s-notifications-div"></div></div><d2l-navigation-separator class="d2l-navigation-s-notifications-divider"></d2l-navigation-separator><div class="d2l-navigation-s-personal-menu"><d2l-dropdown><d2l-navigation-button class="d2l-dropdown-opener"><span class="d2l-navigation-s-personal-menu-wrapper"><d2l-profile-image-base class="d2l-token-receiver" data-token-receiver-scope="core:*:*" href="/d2l/api/lp/1.7/profile/bfWKJbW80s/image?v=20.21.11.33544" first-name="Brian" last-name="Rahadi" colour-id="501517" medium></d2l-profile-image-base><span class="d2l-navigation-s-personal-menu-text">Brian Rahadi</span></span></d2l-navigation-button><d2l-dropdown-content min-width="300" no-padding vertical-offset="0"><div>
+			<ul class="d2l-list">
+				<li>
+					<ul style="list-style:none;margin:10px;padding:0;">
+						<li>
+							<span style="white-space:nowrap;"><a class="d2l-link" href="/d2l/lp/profile/profile_edit.d2l?ou=204496" onclick="D2L.O(&quot;__gctl_54&quot;,0)();">Profile</a>
+							</span></li>
+						<li>
+							<span style="white-space:nowrap;"><a class="d2l-link" href="/d2l/Notifications/Settings?ou=204496" onclick="D2L.O(&quot;__gctl_54&quot;,1)();">Notifications</a>
+							</span></li>
+						<li>
+							<span style="white-space:nowrap;"><a class="d2l-link" href="/d2l/lp/preferences/preferences_main/preferences_main.d2l?ou=204496" onclick="D2L.O(&quot;__gctl_54&quot;,2)();">Account Settings</a>
+							</span></li>
+					</ul>
+					<hr class="d2l-minibar-menu-separator" /></li>
+				<li>
+					<ul style="list-style:none;margin:10px;padding:0;">
+						<li>
+							<span style="white-space:nowrap;"><a class="d2l-link" href="/d2l/le/userprogress/501517/204496/Summary?searchString=&amp;sortField=LastName&amp;sortDirection=0">Progress</a>
+							</span></li>
+					</ul>
+					<hr class="d2l-minibar-menu-separator" /></li>
+				<li>
+					<span style="white-space:nowrap;"><a class="d2l-link d2l_1_5_462" href="javascript:void(0);" onclick="D2L.O(&quot;__gctl_54&quot;,3)();return false;">Log Out</a>
+					</span></li>
+			</ul>
+		</div>
+		</d2l-dropdown-content></d2l-dropdown>
+		</div></div></d2l-navigation-main-header><d2l-navigation-main-footer class="d2l-branding-navigation-background-color d2l-visible-on-ancestor-target"><div slot="main"><div class="d2l-navigation-s-main-wrapper" data-loading="1" data-unmeasured="1" role="list"><div class="d2l-navigation-s-item" role="listitem"><a href="/d2l/home/204496" class="d2l-navigation-s-link">Course Home</a></div>
+		<div class="d2l-navigation-s-item" role="listitem"><d2l-dropdown><button class="d2l-navigation-s-group d2l-dropdown-opener"><span class="d2l-navigation-s-group-wrapper"><span class="d2l-navigation-s-group-text">Course Materials</span><d2l-icon icon="tier1:chevron-down"></d2l-icon></span></button><d2l-dropdown-menu><d2l-menu label="Course Materials" class="d2l-menu-mvc">
+			<d2l-menu-item-link text="Content" href="/d2l/le/content/204496/Home" class="d2l-navigation-s-menu-item-root"></d2l-menu-item-link>
+			<d2l-menu-item-link text="Links" href="/d2l/lms/links/view_links.d2l?ou=204496" class="d2l-navigation-s-menu-item-root"></d2l-menu-item-link>
+		</d2l-menu>
+		</d2l-dropdown-menu></d2l-dropdown>
+		</div>
+		<div class="d2l-navigation-s-item" role="listitem"><d2l-dropdown><button class="d2l-navigation-s-group d2l-dropdown-opener"><span class="d2l-navigation-s-group-wrapper"><span class="d2l-navigation-s-group-text">Communication</span><d2l-icon icon="tier1:chevron-down"></d2l-icon></span></button><d2l-dropdown-menu><d2l-menu label="Communication" class="d2l-menu-mvc">
+			<d2l-menu-item-link text="Email" href="/d2l/lms/email/frame.d2l?ou=204496" class="d2l-navigation-s-menu-item-root"></d2l-menu-item-link>
+			<d2l-menu-item-link text="Announcements" href="/d2l/lms/news/main.d2l?ou=204496" class="d2l-navigation-s-menu-item-root"></d2l-menu-item-link>
+		</d2l-menu>
+		</d2l-dropdown-menu></d2l-dropdown>
+		</div>
+		<div class="d2l-navigation-s-item" role="listitem"><d2l-dropdown><button class="d2l-navigation-s-group d2l-dropdown-opener"><span class="d2l-navigation-s-group-wrapper"><span class="d2l-navigation-s-group-text">Assessments</span><d2l-icon icon="tier1:chevron-down"></d2l-icon></span></button><d2l-dropdown-menu><d2l-menu label="Assessments" class="d2l-menu-mvc">
+			<d2l-menu-item-link text="Assignments" href="/d2l/lms/dropbox/dropbox.d2l?ou=204496" class="d2l-navigation-s-menu-item-root"></d2l-menu-item-link>
+			<d2l-menu-item-link text="Surveys" href="/d2l/lms/survey/surveys.d2l?ou=204496" class="d2l-navigation-s-menu-item-root"></d2l-menu-item-link>
+		</d2l-menu>
+		</d2l-dropdown-menu></d2l-dropdown>
+		</div>
+		<div class="d2l-navigation-s-item" role="listitem"><d2l-dropdown><button class="d2l-navigation-s-group d2l-dropdown-opener"><span class="d2l-navigation-s-group-wrapper"><span class="d2l-navigation-s-group-text">My Tools</span><d2l-icon icon="tier1:chevron-down"></d2l-icon></span></button><d2l-dropdown-menu><d2l-menu label="My Tools" class="d2l-menu-mvc">
+			<d2l-menu-item-link text="Calendar" href="/d2l/le/calendar/204496" class="d2l-navigation-s-menu-item-root"></d2l-menu-item-link>
+			<d2l-menu-item-link text="Classlist" href="/d2l/lms/classlist/classlist.d2l?ou=204496" class="d2l-navigation-s-menu-item-root"></d2l-menu-item-link>
+			<d2l-menu-item-link text="Class Progress" href="/d2l/le/userprogress/501517/204496/Summary?searchString=&amp;sortField=LastName&amp;sortDirection=0" class="d2l-navigation-s-menu-item-root"></d2l-menu-item-link>
+			<d2l-menu-item-link text="Grades" href="/d2l/lms/grades/index.d2l?ou=204496" class="d2l-navigation-s-menu-item-root"></d2l-menu-item-link>
+			<d2l-menu-item-link text="Groups" href="/d2l/lms/group/group_list.d2l?ou=204496" class="d2l-navigation-s-menu-item-root"></d2l-menu-item-link>
+			<d2l-menu-item-link text="My Media" href="/d2l/ext/rp/204496/lti/framedlaunch/2ab85de6-dcdc-4068-98d7-7e5ad2bffc8f" class="d2l-navigation-s-menu-item-root"></d2l-menu-item-link>
+			<d2l-menu-item-link text="Media Gallery" href="/d2l/ext/rp/204496/lti/framedlaunch/80ed8174-0d42-45ff-8f91-b12b9362e965" class="d2l-navigation-s-menu-item-root"></d2l-menu-item-link>
+		</d2l-menu>
+		</d2l-dropdown-menu></d2l-dropdown>
+		</div>
+		<div class="d2l-navigation-s-item" role="listitem"><a href="https://iweb.langara.bc.ca/lts/brightspace/how-to-use-brightspace/" data-popup-menubar="1" data-popup-toolbar="1" rel="noopener" class="d2l-navigation-s-link d2l-navigation-s-link-popup">HELP</a></div>
+		<div class="d2l-navigation-s-item d2l-navigation-s-more" role="listitem"><d2l-dropdown><button class="d2l-navigation-s-group d2l-dropdown-opener"><span class="d2l-navigation-s-group-wrapper"><span class="d2l-navigation-s-group-text">More</span><d2l-icon icon="tier1:chevron-down"></d2l-icon></span></button><d2l-dropdown-menu><d2l-menu label="More" class="d2l-menu-mvc">
+			<d2l-menu-item-link text="Course Home" href="/d2l/home/204496" class="d2l-navigation-s-menu-item-root"></d2l-menu-item-link>
+			<d2l-menu-item text="Course Materials" class="d2l-navigation-s-menu-item-root">
+				<d2l-menu class="d2l-menu-mvc d2l-navigation-s-menu-item-root">
+					<d2l-menu-item-link text="Content" href="/d2l/le/content/204496/Home"></d2l-menu-item-link>
+					<d2l-menu-item-link text="Links" href="/d2l/lms/links/view_links.d2l?ou=204496"></d2l-menu-item-link>
+				</d2l-menu>
+			</d2l-menu-item>
+			<d2l-menu-item text="Communication" class="d2l-navigation-s-menu-item-root">
+				<d2l-menu class="d2l-menu-mvc d2l-navigation-s-menu-item-root">
+					<d2l-menu-item-link text="Email" href="/d2l/lms/email/frame.d2l?ou=204496"></d2l-menu-item-link>
+					<d2l-menu-item-link text="Announcements" href="/d2l/lms/news/main.d2l?ou=204496"></d2l-menu-item-link>
+				</d2l-menu>
+			</d2l-menu-item>
+			<d2l-menu-item text="Assessments" class="d2l-navigation-s-menu-item-root">
+				<d2l-menu class="d2l-menu-mvc d2l-navigation-s-menu-item-root">
+					<d2l-menu-item-link text="Assignments" href="/d2l/lms/dropbox/dropbox.d2l?ou=204496"></d2l-menu-item-link>
+					<d2l-menu-item-link text="Surveys" href="/d2l/lms/survey/surveys.d2l?ou=204496"></d2l-menu-item-link>
+				</d2l-menu>
+			</d2l-menu-item>
+			<d2l-menu-item text="My Tools" class="d2l-navigation-s-menu-item-root">
+				<d2l-menu class="d2l-menu-mvc d2l-navigation-s-menu-item-root">
+					<d2l-menu-item-link text="Calendar" href="/d2l/le/calendar/204496"></d2l-menu-item-link>
+					<d2l-menu-item-link text="Classlist" href="/d2l/lms/classlist/classlist.d2l?ou=204496"></d2l-menu-item-link>
+					<d2l-menu-item-link text="Class Progress" href="/d2l/le/userprogress/501517/204496/Summary?searchString=&amp;sortField=LastName&amp;sortDirection=0"></d2l-menu-item-link>
+					<d2l-menu-item-link text="Grades" href="/d2l/lms/grades/index.d2l?ou=204496"></d2l-menu-item-link>
+					<d2l-menu-item-link text="Groups" href="/d2l/lms/group/group_list.d2l?ou=204496"></d2l-menu-item-link>
+					<d2l-menu-item-link text="My Media" href="/d2l/ext/rp/204496/lti/framedlaunch/2ab85de6-dcdc-4068-98d7-7e5ad2bffc8f"></d2l-menu-item-link>
+					<d2l-menu-item-link text="Media Gallery" href="/d2l/ext/rp/204496/lti/framedlaunch/80ed8174-0d42-45ff-8f91-b12b9362e965"></d2l-menu-item-link>
+				</d2l-menu>
+			</d2l-menu-item>
+			<d2l-menu-item text="HELP" class="d2l-navigation-s-menu-item-root" id="d2l_1_6_464"></d2l-menu-item>
+		</d2l-menu>
+		</d2l-dropdown-menu></d2l-dropdown>
+		</div>
+		</div></div></d2l-navigation-main-footer><div class="d2l-navigation-s-mobile-menu" data-state="closed" data-cprl="/d2l/lp/courseSelector/204496/InitPartial"><div class="d2l-navigation-s-mobile-menu-mask"><div class="d2l-navigation-s-mobile-menu-focus-trap-start d2l-offscreen" tabindex="0">Menu Start</div><p class="d2l-navigation-s-mobile-menu-first d2l-offscreen" tabindex="-1">Menu Start</p><div class="d2l-navigation-s-mobile-menu-mask-close"><button class="d2l-navigation-s-button"><d2l-icon icon="tier1:close-large-thick"></d2l-icon><span class="d2l-navigation-s-button-text">close</span></button></div></div><div class="d2l-navigation-s-mobile-menu-content"><d2l-navigation-band></d2l-navigation-band><div class="d2l-navigation-s-mobile-menu-header"><div class="d2l-navigation-s-mobile-menu-branded-header"><div class="d2l-navigation-s-header-logo-area d2l-navigation-s-header-no-home-icon"><d2l-navigation-separator class="d2l-navigation-s-logo-divider"></d2l-navigation-separator><div class="d2l-navigation-s-logo"><d2l-navigation-link-image src="/d2l/lp/navbars/6606/theme/viewimage/1495196/view?v=20.21.11.33544" text="My Home" href="/d2l/lp/ouHome/defaultHome.d2l" slim></d2l-navigation-link-image></div><d2l-navigation-separator class="d2l-navigation-s-title-divider"></d2l-navigation-separator><div class="d2l-navigation-s-title-container"><a class="d2l-navigation-s-link" href="/d2l/home/204496" title="CPSC-2150-001 - Algrthms &amp; Data Strctrs II  30443.202130">CPSC-2150-001 - Algrthms &amp; Data Strctrs II  30443.202130</a></div></div><div class="d2l-navigation-s-gutter"></div><div class="d2l-navigation-s-mobile-menu-course-selector"><d2l-navigation-button-notification-icon icon="tier3:classes" text="Select a course..."></d2l-navigation-button-notification-icon></div></div><div class="d2l-navigation-s-mobile-menu-header-course-menu"><button class="d2l-navigation-s-button"><d2l-icon icon="tier1:chevron-left"></d2l-icon><span class="d2l-navigation-s-button-text">CPSC-2150-001 - Algrthms &amp; Data Strctrs II</span></button><div class="d2l-navigation-s-title-container"><span class="d2l-navigation-s-title">CPSC-2150-001 - Algrthms &amp; Data Strctrs II  30443.202130</span></div></div></div><div class="d2l-navigation-s-title-container d2l-navigation-s-mobile-menu-title-bp d2l-branding-navigation-background-color"><a class="d2l-navigation-s-link" href="/d2l/home/204496" title="CPSC-2150-001 - Algrthms &amp; Data Strctrs II  30443.202130">CPSC-2150-001 - Algrthms &amp; Data Strctrs II  30443.202130</a></div><div class="d2l-navigation-s-mobile-menu-course-menu"></div><div class="d2l-navigation-s-mobile-menu-nav"><d2l-menu label="menu" class="d2l-menu-mvc">
+			<d2l-menu-item-link text="Course Home" href="/d2l/home/204496"></d2l-menu-item-link>
+			<d2l-menu-item text="Course Materials">
+				<d2l-menu class="d2l-menu-mvc">
+					<d2l-menu-item-link text="Content" href="/d2l/le/content/204496/Home"></d2l-menu-item-link>
+					<d2l-menu-item-link text="Links" href="/d2l/lms/links/view_links.d2l?ou=204496"></d2l-menu-item-link>
+				</d2l-menu>
+			</d2l-menu-item>
+			<d2l-menu-item text="Communication">
+				<d2l-menu class="d2l-menu-mvc">
+					<d2l-menu-item-link text="Email" href="/d2l/lms/email/frame.d2l?ou=204496"></d2l-menu-item-link>
+					<d2l-menu-item-link text="Announcements" href="/d2l/lms/news/main.d2l?ou=204496"></d2l-menu-item-link>
+				</d2l-menu>
+			</d2l-menu-item>
+			<d2l-menu-item text="Assessments">
+				<d2l-menu class="d2l-menu-mvc">
+					<d2l-menu-item-link text="Assignments" href="/d2l/lms/dropbox/dropbox.d2l?ou=204496"></d2l-menu-item-link>
+					<d2l-menu-item-link text="Surveys" href="/d2l/lms/survey/surveys.d2l?ou=204496"></d2l-menu-item-link>
+				</d2l-menu>
+			</d2l-menu-item>
+			<d2l-menu-item text="My Tools">
+				<d2l-menu class="d2l-menu-mvc">
+					<d2l-menu-item-link text="Calendar" href="/d2l/le/calendar/204496"></d2l-menu-item-link>
+					<d2l-menu-item-link text="Classlist" href="/d2l/lms/classlist/classlist.d2l?ou=204496"></d2l-menu-item-link>
+					<d2l-menu-item-link text="Class Progress" href="/d2l/le/userprogress/501517/204496/Summary?searchString=&amp;sortField=LastName&amp;sortDirection=0"></d2l-menu-item-link>
+					<d2l-menu-item-link text="Grades" href="/d2l/lms/grades/index.d2l?ou=204496"></d2l-menu-item-link>
+					<d2l-menu-item-link text="Groups" href="/d2l/lms/group/group_list.d2l?ou=204496"></d2l-menu-item-link>
+					<d2l-menu-item-link text="My Media" href="/d2l/ext/rp/204496/lti/framedlaunch/2ab85de6-dcdc-4068-98d7-7e5ad2bffc8f"></d2l-menu-item-link>
+					<d2l-menu-item-link text="Media Gallery" href="/d2l/ext/rp/204496/lti/framedlaunch/80ed8174-0d42-45ff-8f91-b12b9362e965"></d2l-menu-item-link>
+				</d2l-menu>
+			</d2l-menu-item>
+			<d2l-menu-item text="HELP" id="d2l_1_7_320"></d2l-menu-item>
+		</d2l-menu>
+		</div></div><div class="d2l-navigation-s-mobile-menu-focus-trap-end d2l-offscreen" tabindex="0">Menu End</div></div></d2l-navigation></nav></header><span class="d2l-skipnav-target"></span><div class="d2l-page-message-container"><div class="d2l-page-message d2l-hidden d2l_1_8_368" id="d2l_sessionExpiryWarning"><div style="display:none;" id="d2l_sessionExpiryAlert" role="alert"><div class="d2l-container-icon d2l_1_9_382 d2l_1_10_219">
+			<div class="d2l-container-icon-inner d2l_1_11_265 d2l_1_12_210 d2l_1_13_231 d2l_1_14_532">
+				<h2 class="d2l-heading vui-heading-2">Are You Still There?</h2>
+				<div class="d2l-textblock">Your session expires after 180 minutes of inactivity, which protects your information in case you&#39;ve left your device without logging out.<br/>
+<br/>
+<strong>Hit a key or click anywhere to stay logged in.</strong></div>
+			</div>
+		</div>
+		</div><div style="display:none;" id="d2l_sessionExpiryCheck" role="alert"><div class="d2l-container-icon d2l_1_9_382 d2l_1_10_219">
+			<div class="d2l-container-icon-inner d2l_1_15_48 d2l_1_12_210 d2l_1_13_231 d2l_1_14_532">
+				<div class="d2l_1_16_0">
+					<h2 class="d2l-heading vui-heading-2 d2l-heading-none">Oh, There You Are!</h2>
+				</div>
+			</div>
+		</div>
+		</div></div>
+		</div>
+		<div id="d_content" class="d2l-page-main d2l-max-width d2l-min-width"  >
+		<div id="d_content_inner" class="d2l-page-main-padding">
+		<div id="d_page_header" class="d2l-page-header"><div class="d2l-page-actions-container d2l-right"><div class="page-action-group"><d2l-dropdown-more text="Utilities"><d2l-dropdown-menu no-pointer vertical-offset="12"><d2l-menu label="Utilities" class="d2l-menu-mvc">
+			<d2l-menu-item text="Print" id="d2l_1_17_288"></d2l-menu-item>
+		</d2l-menu>
+		</d2l-dropdown-menu></d2l-dropdown-more>
+		</div><div class="d2l-page-actions d2l-page-actions-responsive" role="region" aria-label="Utilities">
+			<div class="d2l-button-subtle-group">
+				<d2l-button-subtle icon="tier1:print" onclick="D2L.O(&quot;__gctl_55&quot;,0)();" text="Print"></d2l-button-subtle>
+			</div>
+		</div>
+		<div class="d2l-clear"></div></div><div class="d2l-tool-actions d2l-left"><div class="d2l-heading"><h1 id="d_page_title" class="d2l-heading-title"><span class="vui-heading-1">Grades</span></h1>
+		</div></div><span class="d2l-clear"></span></div><div id="d_content_r_c1">
+				<div id="d_content_r_c2">
+					<div id="d_content_r">
+						<div id="d_content_r_p">
+							<form method="post" action="main.d2l?ou=204496" id="d2l_form" enctype="multipart/form-data" onreset="return false;" onsubmit="return false;">
+								<div>
+									<input type="hidden" name="d2l_action" value="" />
+									<input type="hidden" name="d2l_actionparam" value="" />
+									<input type="hidden" name="d2l_hitCode" value="" />
+									<input type="hidden" name="d2l_rf" value="" />
+									<input type="hidden" name="d2l_controlMapPrev" value="" />
+<h2 class="dhdg_1 vui-heading-2">Final Calculated Grade</h2><table class="d_FG" role="presentation"><tr><td style="text-align:left;" class="fl_n fl_top"><label id="ctl_3" class="d2l-label"><span>Weight Achieved</span></label></td><td></td></tr><tr id="z_a"><td class="fct_w" colspan="2"><table summary="" class="d_t"><tr><td class="d_tl d_tm d_tn"><div style="text-align:center;display:inline;"><div class="dco" id="z_b" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_d">97.38 / 100</label></div></div></div></td><td class="d_tl d_tm d_tn"><a title="View how final grade was calculated" href="javascript://" onclick="gotoFinalGradeCalculationFormula( 552352, 501517 );return false;" class="di_l d2l-link d2l-link-inline"><span class="di_s di_s_icon" ><d2l-icon icon="tier1:calculate" role="img" class="di_i" alt="View how final grade was calculated" title="View how final grade was calculated" style="width:18px;height:18px;"></d2l-icon></span></a></td><td class="d_tl d_tm d_tn" style="width:100%;"></td></tr></table></td></tr><tr><td style="text-align:left;" class="fl_n fl_top"><label id="ctl_9" class="d2l-label"><span>Grade</span></label></td><td></td></tr><tr id="z_e"><td class="fct_w" colspan="2"><table summary="" class="d_t"><tr><td class="d_tl d_tm d_tn" style="width:100%;"><div style="text-align:center;display:inline;"><div class="dco" id="z_f" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_h">A+</label></div></div></div></td></tr></table></td></tr></table><div class="d2l-grid-container"><span style="display:none;" id="z_i_values"></span><div class="clear"></div><d2l-table-wrapper class="d2l-grid-wrapper d_gl"><table id="z_i" class="d2l-table d2l-grid d_gl" type="list" summary="List of grade items and their values" no-column-border=""><tr class="d_gh" header><th scope="col" colspan="2"  class="d_hch d_gl">Grade Item</th><th scope="col" class="d_hch d_gr" style="padding-left:0.9em;">Points</th><th scope="col" class="d_hch d_gr" style="padding-left:0.9em;">Weight Achieved</th><th scope="col" class="d_hch d_gr" style="padding-left:0.9em;">Grade</th><th scope="col" class="d_hch d_gl" style="padding-left:1em;">Feedback</th></tr><tr class="d_ggl1"><th scope="row"  colspan="2" class="d_gt d_ich"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c"><label>Assignments</label></div></div></div></div></th><td class="d_gn d_gr d_gt">&nbsp;</td><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;display:inline;"><div class="dco" id="z_j" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_l">35 / 35</label></div></div></div></div></div></div></div></td><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;background-color:#D4DEED;display:inline;"><div class="dco" id="z_m" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_o">A+</label></div></div></div></div></div></td><td class="d_gt">&nbsp;</td></tr><tr><td class="d_g_treeNodeImage d_g_l_e" style="border-right:none;"><img src="/d2l/img/LP/pixel.gif" width="20" height="20" alt="" /></td><th scope="row"  class="d_gt d_ich"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c"><label>A1</label></div></div></div></div></th><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;display:inline;"><div class="dco" id="z_p" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_r">100 / 100</label></div></div></div></div></div></div></div></td><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;display:inline;"><div class="dco" id="z_s" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_u">5 / 5</label></div></div></div></div></div></div></div></td><td class="d_gn d_gr d_gt">&nbsp;</td><td class="d_gt"><div class="dco d2l-grades-individualcommentlabelcontainer" style="margin-bottom:0.9em;"><div class="dco_c"><div class="drt d2l-htmlblock d2l-htmlblock-untrusted d2l-htmlblock-deferred"><template><div class="feedback-container"><div class="name">Overall Feedback</div><div class="feedback"><table style="border-collapse: collapse;border: 2px solid black;padding: 0 10px;width: 100%;background-color: white;">
+<tbody>
+<tr style="background-color: black;color: white;border: 2px solid black;">
+<th colspan="2">Assignment #1: Recursive Functions : Brian Rahadi</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">toBinaryString
+<p style="font-weight: normal;padding: 0 1em;margin: 0;">1. Exercise 3.10 <br/>std::string toBinaryString(unsigned int n);</p>
+</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">15 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">15/15</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">toBitsString
+<p style="font-weight: normal;padding: 0 1em;margin: 0;">2. Exercise 3.11 toBitsString <br/>std::string toBitsString(unsigned int n);</p>
+</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">20 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">20/20</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">minPosNum
+<p style="font-weight: normal;padding: 0 1em;margin: 0;">3. Exercise 5.6 minPosNum <br/>int minPosNum(const int A[], int n);</p>
+</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">20 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">20/20</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">swapPairsLeftToRight
+<p style="font-weight: normal;padding: 0 1em;margin: 0;">4. Exercise 5.12 swapPairsLeftToRight <br/>void swapPairsLeftToRight(int A[], int n);</p>
+</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">15 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">15/15</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">samePosChar
+<p style="font-weight: normal;padding: 0 1em;margin: 0;">5. Exercise 7.3 <br/>bool samePosChar(const std::string&amp; strA, const std::string&amp; strB, char ch);</p>
+</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">25 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">25/25</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Documentation and Programming Style</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">5 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">5/5</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">General</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;"></th>
+</tr>
+<tr style="text-align: left;border: 2px solid black;">
+<td style="border: 1px solid black;padding-left: 20px;">Good job!</td>
+<th style="text-align: right;"></th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">--</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: black;color: white;border: 2px solid black;text-align: right;">
+<th>Total</th>
+<th style="text-align: right;">100/100</th>
+</tr>
+</tbody>
+</table></div></div></template></div></div></div></td></tr><tr class="d_gd"><td class="d_g_treeNodeImage d_g_l_e" style="border-right:none;"><img src="/d2l/img/LP/pixel.gif" width="20" height="20" alt="" /></td><th scope="row"  class="d_gt d_ich"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c"><label>A2</label></div></div></div></div></th><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;display:inline;"><div class="dco" id="z_v" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_x">80 / 100</label></div></div></div></div></div></div></div></td><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;display:inline;"><div class="dco" id="z_y" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_ba">4 / 5</label></div></div></div></div></div></div></div></td><td class="d_gn d_gr d_gt">&nbsp;</td><td class="d_gt"><div class="dco d2l-grades-individualcommentlabelcontainer" style="margin-bottom:0.9em;"><div class="dco_c"><div class="drt d2l-htmlblock d2l-htmlblock-untrusted d2l-htmlblock-deferred"><template><div class="feedback-container"><div class="name">Overall Feedback</div><div class="feedback"><table style="border-collapse: collapse;border: 2px solid black;padding: 0 10px;width: 100%;background-color: white;">
+<tbody>
+<tr style="background-color: black;color: white;border: 2px solid black;">
+<th colspan="2">202110LinkedLists: Brian Rahadi</th>
+</tr>
+<tr>
+<td colspan="2" style="background-color: lightgray;padding: 0 2em;">Assignment #2: ADT List implemented as a Linked List</td>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Constructors</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">5 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">5/5</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Assignment operator</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">6 possible</th>
+</tr>
+<tr style="text-align: left;border: 2px solid black;">
+<td style="border: 1px solid black;padding-left: 20px;">Leaks memory, didn&#39;t delete the list properly</td>
+<th style="text-align: right;">-3</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">3/6</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Destructor</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">7 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">7/7</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Remove All</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">16 possible</th>
+</tr>
+<tr style="text-align: left;border: 2px solid black;">
+<td style="border: 1px solid black;padding-left: 20px;">Can stop checking early if node-&gt;item &gt; x</td>
+<th style="text-align: right;">-4</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">12/16</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Halve</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">16 possible</th>
+</tr>
+<tr style="text-align: left;border: 2px solid black;">
+<td style="border: 1px solid black;padding-left: 20px;">calls length, halve() can be implemented in 1 pass</td>
+<th style="text-align: right;">-4</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">12/16</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">operator==, operator!=</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">7 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">7/7</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Merge</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">16 possible</th>
+</tr>
+<tr style="text-align: left;border: 2px solid black;">
+<td style="border: 1px solid black;padding-left: 20px;">Doesn&#39;t work</td>
+<th style="text-align: right;">-16</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">0/16</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Empty</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">2 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">2/2</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">First</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">2 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">2/2</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Last</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">4 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">4/4</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Search</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">8 possible</th>
+</tr>
+<tr style="text-align: left;border: 2px solid black;">
+<td style="border: 1px solid black;padding-left: 20px;">can stop searching early when node-&gt;item &gt; x</td>
+<th style="text-align: right;">-3</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">5/8</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Length</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">7 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">7/7</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Operator&lt;&lt;</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">4 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">4/4</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Bonus</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;"></th>
+</tr>
+<tr style="text-align: left;border: 2px solid black;">
+<td style="border: 1px solid black;padding-left: 20px;">Doesn&#39;t work when the list is empty</td>
+<th style="text-align: right;">10</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">10</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: black;color: white;border: 2px solid black;text-align: right;">
+<th>Total</th>
+<th style="text-align: right;">80/100</th>
+</tr>
+</tbody>
+</table></div></div></template></div></div></div></td></tr><tr><td class="d_g_treeNodeImage d_g_l_e" style="border-right:none;"><img src="/d2l/img/LP/pixel.gif" width="20" height="20" alt="" /></td><th scope="row"  class="d_gt d_ich"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c"><label>A3</label></div></div></div></div></th><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;display:inline;"><div class="dco" id="z_bb" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_bd">100 / 100</label></div></div></div></div></div></div></div></td><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;display:inline;"><div class="dco" id="z_be" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_bg">5 / 5</label></div></div></div></div></div></div></div></td><td class="d_gn d_gr d_gt">&nbsp;</td><td class="d_gt"><div class="dco d2l-grades-individualcommentlabelcontainer" style="margin-bottom:0.9em;"><div class="dco_c"><div class="drt d2l-htmlblock d2l-htmlblock-untrusted d2l-htmlblock-deferred"><template><div class="feedback-container"><div class="name">Overall Feedback</div><div class="feedback"><table style="border-collapse: collapse;border: 2px solid black;padding: 0 10px;width: 100%;background-color: white;">
+<tbody>
+<tr style="background-color: black;color: white;border: 2px solid black;">
+<th colspan="2">202020LinkedListsArrays: Brian Rahadi</th>
+</tr>
+<tr>
+<td colspan="2" style="background-color: lightgray;padding: 0 2em;">Linked Lists in an Array</td>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Given NOT_DEFINED an appropriate value with explanation</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">2 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">2/2</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Simulated null pointer
+<p style="font-weight: normal;padding: 0 1em;margin: 0;">should be a negative integer. use a named constant.</p>
+</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">1 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">1/1</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">constructor <br/>LList()
+<p style="font-weight: normal;padding: 0 1em;margin: 0;">initialized the array of nodes correctly</p>
+</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">5 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">5/5</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">bool isEmpty() const</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">2 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">2/2</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">void insert(short x)
+<p style="font-weight: normal;padding: 0 1em;margin: 0;">array is grown as necessary</p>
+</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">12 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">12/12</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">int length() const</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">2 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">2/2</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">bool search(short x) const</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">3 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">3/3</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">short first() const</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">2 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">2/2</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">short last() const</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">2 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">2/2</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">bool removeAll(short x)</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">10 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">10/10</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">LList halve()</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">14 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">14/14</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">LList twice() const</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">10 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">10/10</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">friend operator ==</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">4 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">4/4</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">friend operator !=</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">2 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">2/2</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">friend operator &lt;&lt;</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">4 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">4/4</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Copy constructor <br/>LList(const LList&amp;)</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">7 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">7/7</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Overloaded assignment operator <br/>LList&amp; operator = (const LList&amp;)
+<p style="font-weight: normal;padding: 0 1em;margin: 0;">must always return *this</p>
+</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">8 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">8/8</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Destructor <br/>~LList()</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">2 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">2/2</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">void dumpNodesArray(std::ostream&amp; out = std::cout) const</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">5 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">5/5</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Documentation and style</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">3 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">3/3</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Bonus
+<p style="font-weight: normal;padding: 0 1em;margin: 0;">up to 30% extra <br/>Design better memory management by having the class LList share a common array of nodes. <br/>Have various instances of the class LList share a common array of nodes. <br/>must include a README.txt and have the bonus part as a second directory</p>
+</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;"></th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">--</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">General</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;"></th>
+</tr>
+<tr style="text-align: left;border: 2px solid black;">
+<td style="border: 1px solid black;padding-left: 20px;">Does not compile. LList.cpp requires climits for SHRT_MIN</td>
+<th style="text-align: right;"></th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">--</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: black;color: white;border: 2px solid black;text-align: right;">
+<th>Total</th>
+<th style="text-align: right;">100/100</th>
+</tr>
+</tbody>
+</table></div></div></template></div></div></div></td></tr><tr class="d_gd"><td class="d_g_treeNodeImage d_g_l_e" style="border-right:none;"><img src="/d2l/img/LP/pixel.gif" width="20" height="20" alt="" /></td><th scope="row"  class="d_gt d_ich"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c"><label>A4</label></div></div></div></div></th><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;display:inline;"><div class="dco" id="z_bh" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_bj">89 / 100</label></div></div></div></div></div></div></div></td><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;display:inline;"><div class="dco" id="z_bk" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_bm">4.45 / 5</label></div></div></div></div></div></div></div></td><td class="d_gn d_gr d_gt">&nbsp;</td><td class="d_gt"><div class="dco d2l-grades-individualcommentlabelcontainer" style="margin-bottom:0.9em;"><div class="dco_c"><div class="drt d2l-htmlblock d2l-htmlblock-untrusted d2l-htmlblock-deferred"><template><div class="feedback-container"><div class="name">Overall Feedback</div><div class="feedback"><table style="border-collapse: collapse;border: 2px solid black;padding: 0 10px;width: 100%;background-color: white;">
+<tbody>
+<tr style="background-color: black;color: white;border: 2px solid black;">
+<th colspan="2">A4: Brian Rahadi</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Exercise 1</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">10 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">10/10</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Exercise 2</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">5 possible</th>
+</tr>
+<tr style="text-align: left;border: 2px solid black;">
+<td style="border: 1px solid black;padding-left: 20px;">did not state properties used</td>
+<th style="text-align: right;"></th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">5/5</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Exercise 3</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">5 possible</th>
+</tr>
+<tr style="text-align: left;border: 2px solid black;">
+<td style="border: 1px solid black;padding-left: 20px;">did not state properties used</td>
+<th style="text-align: right;"></th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">5/5</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Exercise 4</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">8 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">8/8</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Exercise 5</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">10 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">10/10</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Exercise 6</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">10 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">10/10</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Exercise 7</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">6 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">6/6</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Exercise 8</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">16 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">16/16</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Exercise 9</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">14 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">14/14</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Exercise 10</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">16 possible</th>
+</tr>
+<tr style="text-align: left;border: 2px solid black;">
+<td style="border: 1px solid black;padding-left: 20px;">did not solve recurrence relation</td>
+<th style="text-align: right;">-11</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">5/16</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: black;color: white;border: 2px solid black;text-align: right;">
+<th>Total</th>
+<th style="text-align: right;">89/100</th>
+</tr>
+</tbody>
+</table></div></div></template></div></div></div></td></tr><tr><td class="d_g_treeNodeImage d_g_l_e" style="border-right:none;"><img src="/d2l/img/LP/pixel.gif" width="20" height="20" alt="" /></td><th scope="row"  class="d_gt d_ich"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c"><label>A5</label></div></div></div></div></th><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;display:inline;"><div class="dco" id="z_bn" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_bp"><span class="ds_b">0 / 100</span></label><a title="Dropped" href="javascript://" onclick="UI.C(this,&#39;drh( 501517,560434);;return false;&#39;);return false;" class="di_l d2l-link d2l-link-inline"><span class="di_s" style="margin-left:0.5em;" ><img src="/d2l/img/0/Grades.Main.infDropped.gif?v=20.21.11.33544" class="di_i" alt="Dropped" title="Dropped" style="width:16px;height:16px;" id="z_bq"/></span></a></div></div></div></div></div><div class="dco"><div class="dco_c" style="text-align:right;"><span class="ds_a">Dropped!</span></div></div></div></div></td><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;display:inline;"><div class="dco" id="z_br" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_bt"><span class="ds_b">0 / 0</span></label><a title="Dropped" href="javascript://" onclick="UI.C(this,&#39;drh( 501517,560434);;return false;&#39;);return false;" class="di_l d2l-link d2l-link-inline"><span class="di_s" style="margin-left:0.5em;" ><img src="/d2l/img/0/Grades.Main.infDropped.gif?v=20.21.11.33544" class="di_i" alt="Dropped" title="Dropped" style="width:16px;height:16px;" id="z_bu"/></span></a></div></div></div></div></div><div class="dco"><div class="dco_c" style="text-align:right;"><span class="ds_a">Dropped!</span></div></div></div></div></td><td class="d_gn d_gr d_gt">&nbsp;</td><td class="d_gt">&nbsp;</td></tr><tr class="d_gd"><td class="d_g_treeNodeImage d_g_l_e" style="border-right:none;"><img src="/d2l/img/LP/pixel.gif" width="20" height="20" alt="" /></td><th scope="row"  class="d_gt d_ich"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c"><label>A6</label></div></div></div></div></th><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;display:inline;"><div class="dco" id="z_bv" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_bx">115 / 100</label></div></div></div></div></div></div></div></td><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;display:inline;"><div class="dco" id="z_by" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_ca">5.75 / 5</label></div></div></div></div></div></div></div></td><td class="d_gn d_gr d_gt">&nbsp;</td><td class="d_gt"><div class="dco d2l-grades-individualcommentlabelcontainer" style="margin-bottom:0.9em;"><div class="dco_c"><div class="drt d2l-htmlblock d2l-htmlblock-untrusted d2l-htmlblock-deferred"><template><div class="feedback-container"><div class="name">Overall Feedback</div><div class="feedback"><table style="border-collapse: collapse;border: 2px solid black;padding: 0 10px;width: 100%;background-color: white;">
+<tbody>
+<tr style="background-color: black;color: white;border: 2px solid black;">
+<th colspan="2">Assignment #6: Puzzle: Brian Rahadi</th>
+</tr>
+<tr>
+<td colspan="2" style="background-color: lightgray;padding: 0 2em;">The purpose of this assignment is use backtracking to solve a puzzle and to develop a program that uses line arguments.</td>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">processes line arguments for numberPlace
+<p style="font-weight: normal;padding: 0 1em;margin: 0;">The code for the line arguments should be in the files <b>lineArguments.cpp</b> and <b>lineArguments.h</b> As described in Lab VIII, expected is</p>
+<ul>
+<li>-help</li>
+<li>-input inFile</li>
+<li>[-output outputFile]</li>
+<li>error handling</li>
+</ul>
+<p></p>
+</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">25 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">25/25</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">successful solve
+<p style="font-weight: normal;padding: 0 1em;margin: 0;"></p>
+<ul>
+<li>in the function solve in Grid.cpp</li>
+<li>takes as argument an open output stream so that each of the solutions is printed</li>
+<li>uses a similar strategy to the one presented in class for solving the sum of the 3 integers and the 8 queens&#39; problem with backtracking, recursion and a for loop.</li>
+<li>does an exhaustive search using backtracking to find all the solutions</li>
+<li>correctly returns the number of solution including zero when there are no solutions</li>
+</ul>
+<p></p>
+</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">40 possible</th>
+</tr>
+<tr style="text-align: left;border: 2px solid black;">
+<td style="border: 1px solid black;padding-left: 20px;">The brute force approach of finding an empty cell is slow.</td>
+<th style="text-align: right;">-15</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">25/40</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">implementation of the Grid class (as defined in Grid.h)
+<p style="font-weight: normal;padding: 0 1em;margin: 0;"></p>
+<ul>
+<li>constructor</li>
+<li>isEmpty</li>
+<li>numberOfSolutions</li>
+<li>workAssignns</li>
+<li>dimension</li>
+<li>overloaded operator for output &lt;&lt;</li>
+<li>copy constructor</li>
+<li>overloaded assignment operator =</li>
+<li>destructor: memory is deallocated properly using the correct syntax without leaving memory leaks</li>
+</ul>
+<p></p>
+</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">25 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">25/25</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">overloaded operator for input &gt;&gt;
+<p style="font-weight: normal;padding: 0 1em;margin: 0;"></p>
+<ul>
+<li>deallocates any previously allocated memory (like the 2D array)</li>
+<li>allocates memory for the grid dynamically</li>
+<li>sets the instance variables later needed properly</li>
+</ul>
+<p></p>
+</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">10 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">10/10</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">General</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;"></th>
+</tr>
+<tr style="text-align: left;border: 2px solid black;">
+<td style="border: 1px solid black;padding-left: 20px;">BONUS
+<ul>
+<li>properly reads the dimensions from a file</li>
+<li>solves the puzzle with the dimensions read</li>
+<li>finds all the possible solutions</li>
+</ul>
+</td>
+<th style="text-align: right;">30</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">30</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: black;color: white;border: 2px solid black;text-align: right;">
+<th>Total</th>
+<th style="text-align: right;">115/100</th>
+</tr>
+</tbody>
+</table></div></div></template></div></div></div></td></tr><tr><td class="d_g_treeNodeImage d_g_l_e" style="border-right:none;"><img src="/d2l/img/LP/pixel.gif" width="20" height="20" alt="" /></td><th scope="row"  class="d_gt d_ich"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c"><label>A7</label></div></div></div></div></th><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;display:inline;"><div class="dco" id="z_cb" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_cd">102 / 100</label></div></div></div></div></div></div></div></td><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;display:inline;"><div class="dco" id="z_ce" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_cg">5.1 / 5</label></div></div></div></div></div></div></div></td><td class="d_gn d_gr d_gt">&nbsp;</td><td class="d_gt"><div class="dco d2l-grades-individualcommentlabelcontainer" style="margin-bottom:0.9em;"><div class="dco_c"><div class="drt d2l-htmlblock d2l-htmlblock-untrusted d2l-htmlblock-deferred"><template><div class="feedback-container"><div class="name">Overall Feedback</div><div class="feedback"><table style="border-collapse: collapse;border: 2px solid black;padding: 0 10px;width: 100%;background-color: white;">
+<tbody>
+<tr style="background-color: black;color: white;border: 2px solid black;">
+<th colspan="2">BSTUnivariatePolynomial: Brian Rahadi</th>
+</tr>
+<tr>
+<td colspan="2" style="background-color: lightgray;padding: 0 2em;">The purpose of this assignment is to implement a C++ class called Univariate to represent a univariate polynomial with integer coefficients, integrating code into an existing program aand using functors and lambda functions in C++17</td>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">the zero polynomials
+<p style="font-weight: normal;padding: 0 1em;margin: 0;"></p>
+<ul>
+<li>appropriate representation, probably the nullptr</li>
+<li>the default constructor sets the polynomial to the zero polynomial</li>
+<li>the zero polynomial is printed out with the help of the operator &lt;&lt; as a 0</li>
+<li>the function isZeroPolynomial determines if the polynomial is the zero polynomial</li>
+<ul></ul>
+</ul>
+<p></p>
+</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">10 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">10/10</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">constructors that create a Univariate object
+<p style="font-weight: normal;padding: 0 1em;margin: 0;"></p>
+<ul>
+<li>the no argument constructor</li>
+<li>the constructor that creates a single term</li>
+<li>the zero polynomial</li>
+<li>the copy constructor</li>
+</ul>
+steps needed for a correct implementation or the constructor and helper functions
+<ul>
+<li>the instance variable for the function cmp is initialized (or copied)</li>
+<li>the instance variable for the BST (e.g. root) points to a proper (possibly empty) binary search tree</li>
+<li>memory is properly allocated for each node and term allocating memory dynamically</li>
+<ul></ul>
+</ul>
+<p></p>
+</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">10 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">10/10</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">destructor and overloaded assignment operator
+<p style="font-weight: normal;padding: 0 1em;margin: 0;">the memory of each node and term is returned to the heap <br/>the order of deallocating the nodes and terms is done correctly <br/>in the assignment operator</p>
+<ul>
+<li>the functor cmp is copied</li>
+<li>a check is made so in case of &quot;self-assignment&quot; to prevent the tree being copied from being destroyed first</li>
+</ul>
+<p></p>
+</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">10 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">10/10</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">int Univariate::degree() const and int Univariate::coefficient(int n) const
+<p style="font-weight: normal;padding: 0 1em;margin: 0;"></p>
+<ul>
+<li>degree returns -1 as the degree of the zero polynomial</li>
+<li>finds the node with the highest degree and gets the degree</li>
+<li>uses the function cmp to properly either &quot;go left&quot; or &quot;go right&quot; in order to find the term with the highest degree</li>
+<li>coefficient finds the term that has the matching coefficient to n</li>
+<li>uses the cmpFct properly to determine whether to go left or right when looking for the term that has the degree passed as an argument</li>
+</ul>
+<p></p>
+</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">15 possible</th>
+</tr>
+<tr style="text-align: left;border: 2px solid black;">
+<td style="border: 1px solid black;padding-left: 20px;">Finding the highest degree should depend on the cmp function.</td>
+<th style="text-align: right;">-5</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">10/15</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">double Univariate::evaluate(double x) const</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">5 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">5/5</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">void Univariate::insert(Term* t)
+<p style="font-weight: normal;padding: 0 1em;margin: 0;"></p>
+<ul>
+<li>does not add terms with a coefficient of 0</li>
+<li>or deallocates the term properly in the calling function</li>
+<li>if t and this-&gt;root-&gt;term have the same degree, the coefficients are added</li>
+<li>if inserting a term would have caused a term to be zero, the necessary terms and nodes are deallocated</li>
+<li>no extra nodes are allocated that is, there are no two terms with the same degre</li>
+<li>uses the cmpFct to determine whether to go left or right</li>
+<li>allocates nodes and terms as needed</li>
+</ul>
+<p></p>
+</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">23 possible</th>
+</tr>
+<tr style="text-align: left;border: 2px solid black;">
+<td style="border: 1px solid black;padding-left: 20px;">The following input causes a crash:
+<pre>input
+4
+-4 1  -2 0  3 2  4 1
+0
+</pre>
+</td>
+<th style="text-align: right;">-10</th>
+</tr>
+<tr style="text-align: left;border: 2px solid black;">
+<td style="border: 1px solid black;padding-left: 20px;">If the term passed in isn&#39;t stored in the tree (if a term with the same degree is found), then there is a memory leak. Delete the term.</td>
+<th style="text-align: right;">-3</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">10/23</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">delete a node correctly from the binary search tree
+<p style="font-weight: normal;padding: 0 1em;margin: 0;">code given in class can be used: it should have been acknolwledged / cited</p>
+</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">10 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">10/10</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">int Univariate::numberOfTerms() const
+<p style="font-weight: normal;padding: 0 1em;margin: 0;">best is to make the function static</p>
+</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">2 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">2/2</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">const Univariate Univariate::operator + (const Univariate&amp; b)
+<p style="font-weight: normal;padding: 0 1em;margin: 0;">returns as the sum a new polynomial that is independent from the operands (i.e. a new Univariate)</p>
+</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">5 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">5/5</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">input: the operator &gt;&gt;
+<p style="font-weight: normal;padding: 0 1em;margin: 0;">reads the number of terms and the coefficient and degrees of those terms, calling for the newly created term to be inserted into the binary search tree</p>
+</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">5 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">5/5</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">output: the operator &lt;&lt;
+<p style="font-weight: normal;padding: 0 1em;margin: 0;">prints the tree in order using the overloaded operator for Term</p>
+</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">5 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">5/5</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">General</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;"></th>
+</tr>
+<tr style="text-align: left;border: 2px solid black;">
+<td style="border: 1px solid black;padding-left: 20px;"><b>Bonus </b> <br/><code>const Univariate Univariate::differentiate() const</code> <br/>Differentiates the polynomial returning a newly allocated tree (with &quot;new&quot; nodes and &quot;new&quot; terms)</td>
+<th style="text-align: right;">20</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">20</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: black;color: white;border: 2px solid black;text-align: right;">
+<th>Total</th>
+<th style="text-align: right;">102/100</th>
+</tr>
+</tbody>
+</table></div></div></template></div></div></div></td></tr><tr class="d_gd"><td class="d_g_treeNodeImage d_g_l_e" style="border-right:none;"><img src="/d2l/img/LP/pixel.gif" width="20" height="20" alt="" /></td><th scope="row"  class="d_gt d_ich"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c"><label>A8</label></div></div></div></div></th><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;display:inline;"><div class="dco" id="z_ch" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_cj">96 / 100</label></div></div></div></div></div></div></div></td><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;display:inline;"><div class="dco" id="z_ck" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_cm">4.8 / 5</label></div></div></div></div></div></div></div></td><td class="d_gn d_gr d_gt">&nbsp;</td><td class="d_gt"><div class="dco d2l-grades-individualcommentlabelcontainer" style="margin-bottom:0.9em;"><div class="dco_c"><div class="drt d2l-htmlblock d2l-htmlblock-untrusted d2l-htmlblock-deferred"><template><div class="feedback-container"><div class="name">Overall Feedback</div><div class="feedback"><table style="border-collapse: collapse;border: 2px solid black;padding: 0 10px;width: 100%;background-color: white;">
+<tbody>
+<tr style="background-color: black;color: white;border: 2px solid black;">
+<th colspan="2">Graphs: Assignment #8: Brian Rahadi</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">operator &gt;&gt;</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">9 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">9/9</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">operator &lt;&lt;</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">6 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">6/6</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">bool isConnected() const;</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">16 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">16/16</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">bool hasCycle() const;</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">18 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">18/18</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">void listComponents(std::ostream&amp; oStream) const</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">20 possible</th>
+</tr>
+<tr style="text-align: left;border: 2px solid black;">
+<td style="border: 1px solid black;padding-left: 20px;">didn&#39;t output an extra newline for the last row</td>
+<th style="text-align: right;"></th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">20/20</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">int pathLength(int from, int to) const;</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">18 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">18/18</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">int numberOfVertices() const;</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">1 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">1/1</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Assignment operator and copy constructor</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">8 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">8/8</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Destructor</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">4 possible</th>
+</tr>
+<tr style="text-align: left;border: 2px solid black;">
+<td style="border: 1px solid black;padding-left: 20px;">incorrect<br/>since in deleteGraph, <br/>the for loop is wrong since p is deleted before the end of the for loop so p = p-&gt;next accesses deleted memory<br/>you can fix it by changing it to <br/>for (List p = G[i]; p != nullptr;) {<br/>List discard = p;<br/>List next = p-&gt;next;<br/>delete discard;<br/>discard = nullptr;<br/>p = next;<br/>}<br/><br/></td>
+<th style="text-align: right;">-4</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">0/4</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: black;color: white;border: 2px solid black;text-align: right;">
+<th>Total</th>
+<th style="text-align: right;">96/100</th>
+</tr>
+</tbody>
+</table></div></div></template></div></div></div></td></tr><tr><td class="d_g_treeNodeImage d_g_l_e" style="border-right:none;"><img src="/d2l/img/LP/pixel.gif" width="20" height="20" alt="" /></td><th scope="row"  class="d_gt d_ich"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c"><label>Bonus Assignment</label><label>&nbsp;(Bonus)</label></div></div></div></div></th><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;display:inline;"><div class="dco" id="z_cn" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_cp">100 / 100</label></div></div></div></div></div></div></div></td><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;display:inline;"><div class="dco" id="z_cq" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_cs">4.38</label></div></div></div></div></div></div></div></td><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;display:inline;"><div class="dco" id="z_ct" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_cv"></label></div></div></div></div></div></td><td class="d_gt"><div class="dco d2l-grades-individualcommentlabelcontainer" style="margin-bottom:0.9em;"><div class="dco_c"><div class="drt d2l-htmlblock d2l-htmlblock-untrusted d2l-htmlblock-deferred"><template><div class="feedback-container"><div class="name">Overall Feedback</div><div class="feedback"><table style="border-collapse: collapse;border: 2px solid black;padding: 0 10px;width: 100%;background-color: white;">
+<tbody>
+<tr style="background-color: black;color: white;border: 2px solid black;">
+<th colspan="2">Bonus: Brian Rahadi</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Results</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">35 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">35/35</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Linear probing code</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">15 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">15/15</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">quadratic probing code</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">15 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">15/15</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Experiment code</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">35 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">35/35</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: black;color: white;border: 2px solid black;text-align: right;">
+<th>Total</th>
+<th style="text-align: right;">100/100</th>
+</tr>
+</tbody>
+</table></div></div></template></div></div></div></td></tr><tr class="d_ggl1"><th scope="row"  colspan="2" class="d_gt d_ich"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c"><label>Code Reviews</label></div></div></div></div></th><td class="d_gn d_gr d_gt">&nbsp;</td><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;display:inline;"><div class="dco" id="z_cw" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_cy">5 / 5</label></div></div></div></div></div></div></div></td><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;background-color:#D4DEED;display:inline;"><div class="dco" id="z_cz" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_db">A+</label></div></div></div></div></div></td><td class="d_gt">&nbsp;</td></tr><tr class="d_gd"><td class="d_g_treeNodeImage d_g_l_e" style="border-right:none;"><img src="/d2l/img/LP/pixel.gif" width="20" height="20" alt="" /></td><th scope="row"  class="d_gt d_ich"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c"><label>CR 1</label></div></div></div></div></th><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;display:inline;"><div class="dco" id="z_dc" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_de">10 / 10</label></div></div></div></div></div></div></div></td><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;display:inline;"><div class="dco" id="z_df" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_dh">2.5 / 2.5</label></div></div></div></div></div></div></div></td><td class="d_gn d_gr d_gt">&nbsp;</td><td class="d_gt"><div class="dco d2l-grades-individualcommentlabelcontainer" style="margin-bottom:0.9em;"><div class="dco_c"><div class="drt d2l-htmlblock d2l-htmlblock-untrusted d2l-htmlblock-deferred"><template><div class="feedback-container"><div class="name">Overall Feedback</div><div class="feedback"><p>code review during the lab on November 10</p>
+<p>Assignment #5 on Skip Lists</p></div></div></template></div></div></div></td></tr><tr><td class="d_g_treeNodeImage d_g_l_e" style="border-right:none;"><img src="/d2l/img/LP/pixel.gif" width="20" height="20" alt="" /></td><th scope="row"  class="d_gt d_ich"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c"><label>CR 2</label></div></div></div></div></th><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;display:inline;"><div class="dco" id="z_di" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_dk">10 / 10</label></div></div></div></div></div></div></div></td><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;display:inline;"><div class="dco" id="z_dl" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_dn">2.5 / 2.5</label></div></div></div></div></div></div></div></td><td class="d_gn d_gr d_gt">&nbsp;</td><td class="d_gt"><div class="dco d2l-grades-individualcommentlabelcontainer" style="margin-bottom:0.9em;"><div class="dco_c"><div class="drt d2l-htmlblock d2l-htmlblock-untrusted d2l-htmlblock-deferred"><template><div class="feedback-container"><div class="name">Overall Feedback</div><div class="feedback"><p>in office, November 29</p>
+<p>reviewed hashing assignment</p></div></div></template></div></div></div></td></tr><tr class="d_ggl1"><th scope="row"  colspan="2" class="d_gt d_ich"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c"><label>Midterms</label><a title="View statistics for Midterms" href="javascript://" onclick="ShowGradeObjectStatisticsDialog( 560438, 501517 );return false;" class="di_l d2l-link d2l-link-inline"><span class="di_s" style="margin-left:0.5em;" ><img src="/d2l/img/0/Grades.Main.actItemStatistics.gif?v=20.21.11.33544" class="di_i" alt="View statistics for Midterms" title="View statistics for Midterms" style="width:16px;height:16px;"/></span></a></div></div></div></div></th><td class="d_gn d_gr d_gt">&nbsp;</td><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;display:inline;"><div class="dco" id="z_do" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_dq">28.13 / 30</label></div></div></div></div></div></div></div></td><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;background-color:#D4DEED;display:inline;"><div class="dco" id="z_dr" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_dt">A+</label></div></div></div></div></div></td><td class="d_gt">&nbsp;</td></tr><tr class="d_gd"><td class="d_g_treeNodeImage d_g_l_e" style="border-right:none;"><img src="/d2l/img/LP/pixel.gif" width="20" height="20" alt="" /></td><th scope="row"  class="d_gt d_ich"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c"><label>M1</label><a title="View statistics for M1" href="javascript://" onclick="ShowGradeObjectStatisticsDialog( 560439, 501517 );return false;" class="di_l d2l-link d2l-link-inline"><span class="di_s" style="margin-left:0.5em;" ><img src="/d2l/img/0/Grades.Main.actItemStatistics.gif?v=20.21.11.33544" class="di_i" alt="View statistics for M1" title="View statistics for M1" style="width:16px;height:16px;"/></span></a></div></div></div></div></th><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;display:inline;"><div class="dco" id="z_du" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_dw">58 / 65</label></div></div></div></div></div></div></div></td><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;display:inline;"><div class="dco" id="z_dx" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_dz">13.38 / 15</label></div></div></div></div></div></div></div></td><td class="d_gn d_gr d_gt">&nbsp;</td><td class="d_gt"><div class="dco d2l-grades-individualcommentlabelcontainer" style="margin-bottom:0.9em;"><div class="dco_c"><div class="drt d2l-htmlblock d2l-htmlblock-untrusted d2l-htmlblock-deferred"><template><div class="feedback-container"><div class="name">Overall Feedback</div><div class="feedback"><table style="border-collapse: collapse;border: 2px solid black;padding: 0 10px;width: 100%;background-color: white;">
+<tbody>
+<tr style="background-color: black;color: white;border: 2px solid black;">
+<th colspan="2">CPSC 2150 Midterm #1: Brian Rahadi</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">paper questions</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">15 possible</th>
+</tr>
+<tr style="text-align: left;border: 2px solid black;">
+<td style="border: 1px solid black;padding-left: 20px;">nice!</td>
+<th style="text-align: right;"></th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">15/15</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Q() noexcept;</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">2 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">2/2</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">bool isEmpty() const noexcept;</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">2 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">2/2</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">friend std::ostream&amp; operator &lt;&lt; (std::ostream&amp;, const Q&amp;);
+<p style="font-weight: normal;padding: 0 1em;margin: 0;">output starting with the <em>front item</em><em>back item</em></p>
+</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">6 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">6/6</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">void enqueue(int x);</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">6 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">6/6</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">int dequeue();</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">6 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">6/6</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">int frontItem() const;</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">3 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">3/3</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">int length() const;
+<p style="font-weight: normal;padding: 0 1em;margin: 0;">must be <em> recursive </em></p>
+</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">5 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">5/5</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">friend bool operator == (const Q&amp; qA, const Q&amp; qB);</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">6 possible</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">6/6</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Q(const Q&amp; other);
+<p style="font-weight: normal;padding: 0 1em;margin: 0;"><b>must</b> call a <em>recursive</em> function to copy the linked list</p>
+</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">5 possible</th>
+</tr>
+<tr style="text-align: left;border: 2px solid black;">
+<td style="border: 1px solid black;padding-left: 20px;">if (other.front) == nullptr, you still need to set this-&gt;front = this-&gt;back = nullptr;</td>
+<th style="text-align: right;">-2</th>
+</tr>
+<tr style="text-align: left;border: 2px solid black;">
+<td style="border: 1px solid black;padding-left: 20px;">deepCopy has a problem as pointed out in the lab version</td>
+<th style="text-align: right;">-2</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">1/5</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Q&amp; operator = (const Q&amp; rtSide);</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">6 possible</th>
+</tr>
+<tr style="text-align: left;border: 2px solid black;">
+<td style="border: 1px solid black;padding-left: 20px;">do not
+<pre>delete this;
+</pre>
+in
+<pre>Q&amp; Q::operator = (const Q&amp; rtSide) {
+   if (this != &amp;rtSide) {
+      delete this;
+      if (rtSide.front != nullptr) {
+</pre>
+call the function deleteList</td>
+<th style="text-align: right;">-3</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">3/6</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">~Q();</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">3 possible</th>
+</tr>
+<tr style="text-align: left;border: 2px solid black;">
+<td style="border: 1px solid black;padding-left: 20px;">your version of deleteList looks correct</td>
+<th style="text-align: right;"></th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">3/3</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: black;color: white;border: 2px solid black;text-align: right;">
+<th>Total</th>
+<th style="text-align: right;">58/65</th>
+</tr>
+</tbody>
+</table></div></div></template></div></div></div></td></tr><tr><td class="d_g_treeNodeImage d_g_l_e" style="border-right:none;"><img src="/d2l/img/LP/pixel.gif" width="20" height="20" alt="" /></td><th scope="row"  class="d_gt d_ich"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c"><label>M2</label><a title="View statistics for M2" href="javascript://" onclick="ShowGradeObjectStatisticsDialog( 560440, 501517 );return false;" class="di_l d2l-link d2l-link-inline"><span class="di_s" style="margin-left:0.5em;" ><img src="/d2l/img/0/Grades.Main.actItemStatistics.gif?v=20.21.11.33544" class="di_i" alt="View statistics for M2" title="View statistics for M2" style="width:16px;height:16px;"/></span></a></div></div></div></div></th><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;display:inline;"><div class="dco" id="z_ea" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_ec">59 / 60</label></div></div></div></div></div></div></div></td><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;display:inline;"><div class="dco" id="z_ed" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_ef">14.75 / 15</label></div></div></div></div></div></div></div></td><td class="d_gn d_gr d_gt">&nbsp;</td><td class="d_gt"><div class="dco d2l-grades-individualcommentlabelcontainer" style="margin-bottom:0.9em;"><div class="dco_c"><div class="drt d2l-htmlblock d2l-htmlblock-untrusted d2l-htmlblock-deferred"><template><div class="feedback-container"><div class="name">Overall Feedback</div><div class="feedback"><table style="border-collapse: collapse;border: 2px solid black;padding: 0 10px;width: 100%;background-color: white;">
+<tbody>
+<tr style="background-color: black;color: white;border: 2px solid black;">
+<th colspan="2">CPSC 2150 Midterm #2: Brian Rahadi</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">paper questions</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">25 possible</th>
+</tr>
+<tr style="text-align: left;border: 2px solid black;">
+<td style="border: 1px solid black;padding-left: 20px;"></td>
+<th style="text-align: right;">24</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">24/25</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">treeSort
+<p style="font-weight: normal;padding: 0 1em;margin: 0;">Given an array A of n integers, write a function treeSort to sort the first n elements of A in <b>descending</b> order. A is both the input and the output array.</p>
+<pre>// postcondition:
+//    the first n elements of A are sorted in descending order
+//    A[0] &gt;= A[1] &gt;= A[2] &gt;= .... &gt;= A[n-2] &gt;= A[n-1]
+void treeSort(int A[], int n);
+</pre>
+You must use a pointer based <b>binary search tree </b>
+<ul>
+<li>defines a node data structure</li>
+<li>declares and initializes a pointer to an empty tree</li>
+<li>calls a function to insert <em> every A[i] </em> into the tree (or, the function to insert goes through every A[i])</li>
+<li>calls for a function to have the tree traversed</li>
+<li>calls for the tree to be deallocated</li>
+</ul>
+<p></p>
+</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">7 possible</th>
+</tr>
+<tr style="text-align: left;border: 2px solid black;">
+<td style="border: 1px solid black;padding-left: 20px;">implemented correctly</td>
+<th style="text-align: right;">7</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">7/7</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">insert into a pointer based binary search tree
+<p style="font-weight: normal;padding: 0 1em;margin: 0;">the function inserts into the binary search tree, going left and right as needed, not breaking the tree and, allocating memory as needed</p>
+</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">7 possible</th>
+</tr>
+<tr style="text-align: left;border: 2px solid black;">
+<td style="border: 1px solid black;padding-left: 20px;">implemented correctly</td>
+<th style="text-align: right;">7</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">7/7</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">traverse the BST in order and insert the values into an array
+<p style="font-weight: normal;padding: 0 1em;margin: 0;"></p>
+<ul>
+<li>during the traversal either return the index used when inserting into the array or pass the index by reference</li>
+<li>increment the index so that it can be used to insert into the array in the correct place</li>
+</ul>
+<p></p>
+</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">15 possible</th>
+</tr>
+<tr style="text-align: left;border: 2px solid black;">
+<td style="border: 1px solid black;padding-left: 20px;">implemented correctly</td>
+<th style="text-align: right;">15</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">15/15</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">delete the pointer based binary search tree
+<p style="font-weight: normal;padding: 0 1em;margin: 0;">every node of the tree is deallocated</p>
+</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">6 possible</th>
+</tr>
+<tr style="text-align: left;border: 2px solid black;">
+<td style="border: 1px solid black;padding-left: 20px;">implemented correctly</td>
+<th style="text-align: right;">6</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">6/6</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">General</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;"></th>
+</tr>
+<tr style="text-align: left;border: 2px solid black;">
+<td style="border: 1px solid black;padding-left: 20px;">impressive!!!</td>
+<th style="text-align: right;"></th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">--</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: black;color: white;border: 2px solid black;text-align: right;">
+<th>Total</th>
+<th style="text-align: right;">59/60</th>
+</tr>
+</tbody>
+</table></div></div></template></div></div></div></td></tr><tr class="d_ggl1"><th scope="row"  colspan="2" class="d_gt d_ich"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c"><label>Final Exam</label></div></div></div></div></th><td class="d_gn d_gr d_gt">&nbsp;</td><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;display:inline;"><div class="dco" id="z_eg" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_ei">29.25 / 30</label></div></div></div></div></div></div></div></td><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;background-color:#D4DEED;display:inline;"><div class="dco" id="z_ej" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_el">A+</label></div></div></div></div></div></td><td class="d_gt">&nbsp;</td></tr><tr class="d_gd"><td class="d_g_treeNodeImage d_g_l_e" style="border-right:none;"><img src="/d2l/img/LP/pixel.gif" width="20" height="20" alt="" /></td><th scope="row"  class="d_gt d_ich"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c"><label>Final Exam</label><a title="View statistics for Final Exam" href="javascript://" onclick="ShowGradeObjectStatisticsDialog( 560442, 501517 );return false;" class="di_l d2l-link d2l-link-inline"><span class="di_s" style="margin-left:0.5em;" ><img src="/d2l/img/0/Grades.Main.actItemStatistics.gif?v=20.21.11.33544" class="di_i" alt="View statistics for Final Exam" title="View statistics for Final Exam" style="width:16px;height:16px;"/></span></a></div></div></div></div></th><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;display:inline;"><div class="dco" id="z_em" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_eo">78 / 80</label></div></div></div></div></div></div></div></td><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;display:inline;"><div class="dco" id="z_ep" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_er">29.25 / 30</label></div></div></div></div></div></div></div></td><td class="d_gn d_gr d_gt">&nbsp;</td><td class="d_gt"><div class="dco d2l-grades-individualcommentlabelcontainer" style="margin-bottom:0.9em;"><div class="dco_c"><div class="drt d2l-htmlblock d2l-htmlblock-untrusted d2l-htmlblock-deferred"><template><div class="feedback-container"><div class="name">Overall Feedback</div><div class="feedback"><table style="border-collapse: collapse;border: 2px solid black;padding: 0 10px;width: 100%;background-color: white;">
+<tbody>
+<tr style="background-color: black;color: white;border: 2px solid black;">
+<th colspan="2">CPSC 2150 Final Exam: Brian Rahadi</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Question 1 part a) linked lists</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">20 possible</th>
+</tr>
+<tr style="text-align: left;border: 2px solid black;">
+<td style="border: 1px solid black;padding-left: 20px;"></td>
+<th style="text-align: right;">20</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">20/20</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Question 1 part b) complexity</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">3 possible</th>
+</tr>
+<tr style="text-align: left;border: 2px solid black;">
+<td style="border: 1px solid black;padding-left: 20px;"></td>
+<th style="text-align: right;">3</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">3/3</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Question 2 part a) heap</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">12 possible</th>
+</tr>
+<tr style="text-align: left;border: 2px solid black;">
+<td style="border: 1px solid black;padding-left: 20px;"></td>
+<th style="text-align: right;">12</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">12/12</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Question 2 part b) complexity</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">3 possible</th>
+</tr>
+<tr style="text-align: left;border: 2px solid black;">
+<td style="border: 1px solid black;padding-left: 20px;"></td>
+<th style="text-align: right;">3</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">3/3</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Question 3 part a) binary tree</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">16 possible</th>
+</tr>
+<tr style="text-align: left;border: 2px solid black;">
+<td style="border: 1px solid black;padding-left: 20px;"></td>
+<th style="text-align: right;">16</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">16/16</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Question 3 part b) complexity</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">3 possible</th>
+</tr>
+<tr style="text-align: left;border: 2px solid black;">
+<td style="border: 1px solid black;padding-left: 20px;"></td>
+<th style="text-align: right;">3</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">3/3</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Question 4 part a) graph</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">20 possible</th>
+</tr>
+<tr style="text-align: left;border: 2px solid black;">
+<td style="border: 1px solid black;padding-left: 20px;"></td>
+<th style="text-align: right;">20</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">20/20</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">Question 4 part b) complexity</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">3 possible</th>
+</tr>
+<tr style="text-align: left;border: 2px solid black;">
+<td style="border: 1px solid black;padding-left: 20px;">it&#39;s more like O(n + m) not O(nm)</td>
+<th style="text-align: right;">1</th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">1/3</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: #333333;color: white;border: 2px solid black;text-align: left;">
+<th colspan="1" style="border: 1px solid black;">General</th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;"></th>
+</tr>
+<tr style="text-align: left;border: 2px solid black;">
+<td style="border: 1px solid black;padding-left: 20px;">extraordinary -- congratulations!</td>
+<th style="text-align: right;"></th>
+</tr>
+<tr>
+<th></th>
+<th style="background-color: #333333;color: white;border: 2px solid black;text-align: right;">--</th>
+</tr>
+<tr>
+<td style="height: .6em;"></td>
+<td>
+<div style="width: 5em;"></div>
+</td>
+</tr>
+<tr style="background-color: black;color: white;border: 2px solid black;text-align: right;">
+<th>Total</th>
+<th style="text-align: right;">78/80</th>
+</tr>
+</tbody>
+</table></div></div></template></div></div></div></td></tr><tr><th scope="row"  colspan="2" class="d_gt d_ich"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c"><label>Exam Component</label><a title="View calculation for Exam Component" href="javascript://" onclick="gotoGradeCalculationFormula( 585349, 501517 );return false;" class="di_l d2l-link d2l-link-inline"><span class="di_s di_s_icon" style="margin-left:0.5em;" ><d2l-icon icon="tier1:calculate" role="img" class="di_i" alt="View calculation for Exam Component" title="View calculation for Exam Component" style="width:18px;height:18px;"></d2l-icon></span></a></div></div></div></div></th><td class="d_gn d_gr d_gt">&nbsp;</td><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;display:inline;"><div class="dco" id="z_es" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_eu">57.38 / 60</label></div></div></div></div></div></div></div></td><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;display:inline;"><div class="dco" id="z_ev" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_ex">95.64 %</label></div></div></div></div></div></td><td class="d_gt">&nbsp;</td></tr><tr class="d_gd"><th scope="row"  colspan="2" class="d_gt d_ich"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c"><label>Final Letter Grade</label></div></div></div></div></th><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;display:inline;"><div class="dco" id="z_ey" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_fa"></label></div></div></div></div></div></div></div></td><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;display:inline;"><div class="dco" id="z_fb" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_fd"></label></div></div></div></div></div></div></div></td><td class="d_gn d_gr d_gt"><div class="dco"><div class="dco_c" style="text-align:right;"><div style="text-align:center;display:inline;"><div class="dco" id="z_fe" style="display:inline;"><div class="dco_c" style="display:inline;"><label id="z_fg">A+</label></div></div></div></div></div></td><td class="d_gt">&nbsp;</td></tr></table></d2l-table-wrapper></div>
+							<input type="hidden" name="d2l_controlMap" value="[{&quot;ctl_2&quot;:[&quot;z_a&quot;,&quot;Field&quot;,[],null,1,1],&quot;ph_readonly&quot;:[&quot;z_b&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;dg_showgrade&quot;:[&quot;z_c&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;lbl_view&quot;:[&quot;z_d&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_8&quot;:[&quot;z_e&quot;,&quot;Field&quot;,[],null,1,1],&quot;grid_gradeitems&quot;:[&quot;z_i&quot;,&quot;Grid&quot;,[2,0,0,0,1,1,&quot;&quot;,0,1,{},{},[&quot;h1&quot;,[&quot;i00100100111100_i1_560429_0000000000&quot;,[&quot;Assignments&quot;,&quot;&quot;],&quot;i00101100010100_i2_560430_0000000000&quot;,[&quot;A1&quot;,&quot;&quot;],&quot;i00101110010000_i3_560431_0000000000&quot;,[&quot;A2&quot;,&quot;&quot;],&quot;i00101100010000_i4_560432_0000000000&quot;,[&quot;A3&quot;,&quot;&quot;],&quot;i00101110010000_i5_560433_0000000000&quot;,[&quot;A4&quot;,&quot;&quot;],&quot;i00101100010000_i6_560434_0000000000&quot;,[&quot;A5&quot;,&quot;&quot;],&quot;i00101110010000_i7_560435_0000000000&quot;,[&quot;A6&quot;,&quot;&quot;],&quot;i00101100010000_i8_560436_0000000000&quot;,[&quot;A7&quot;,&quot;&quot;],&quot;i00101110010000_i9_560437_0000000000&quot;,[&quot;A8&quot;,&quot;&quot;],&quot;i00101100000010_i10_578835_0000000000&quot;,[&quot;Bonus Assignment&quot;,&quot;&quot;]],[&quot;i00100110111000_i11_560426_0000000000&quot;,[&quot;Code Reviews&quot;,&quot;&quot;],&quot;i00101110010100_i12_560427_0000000000&quot;,[&quot;CR 1&quot;,&quot;&quot;],&quot;i00101100000010_i13_560428_0000000000&quot;,[&quot;CR 2&quot;,&quot;&quot;]],[&quot;i00100110111000_i14_560438_0000000000&quot;,[&quot;Midterms&quot;,&quot;&quot;],&quot;i00101110010100_i15_560439_0000000000&quot;,[&quot;M1&quot;,&quot;&quot;],&quot;i00101100000010_i16_560440_0000000000&quot;,[&quot;M2&quot;,&quot;&quot;]],[&quot;i00100110111000_i17_560441_0000000000&quot;,[&quot;Final Exam&quot;,&quot;&quot;],&quot;i00101110000110_i18_560442_0000000000&quot;,[&quot;Final Exam&quot;,&quot;&quot;]],&quot;i00100100011000_i19_585349_0000000000&quot;,[&quot;Exam Component&quot;,&quot;&quot;],&quot;i00100110001010_i20_560444_0000000000&quot;,[&quot;Final Letter Grade&quot;,&quot;&quot;]],0,&quot;&quot;,&quot;GradeItems&quot;],{},0,1],&quot;ctl65&quot;:[&quot;z_bq&quot;,&quot;Image&quot;,[[&quot;0\/Grades.Main.infDropped.gif&quot;],null,1,0,0,1,&quot;javascript:\/\/&quot;],{},1,1],&quot;ctl80&quot;:[&quot;z_bu&quot;,&quot;Image&quot;,[[&quot;0\/Grades.Main.infDropped.gif&quot;],null,1,0,0,1,&quot;javascript:\/\/&quot;],{},1,1],&quot;ctl_messagearea&quot;:[&quot;z_fh&quot;,&quot;MessageArea&quot;,[&quot;d_content_inner&quot;,&quot;d_page_header&quot;,0,[],null],{},0,0]},{&quot;ph_readonly&quot;:{&quot;ctl_1&quot;:[&quot;z_f&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_4&quot;:[&quot;z_j&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_7&quot;:[&quot;z_m&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_10&quot;:[&quot;z_p&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_13&quot;:[&quot;z_s&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_16&quot;:[&quot;z_v&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_19&quot;:[&quot;z_y&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_22&quot;:[&quot;z_bb&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_25&quot;:[&quot;z_be&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_28&quot;:[&quot;z_bh&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_31&quot;:[&quot;z_bk&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_34&quot;:[&quot;z_bn&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_37&quot;:[&quot;z_br&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_40&quot;:[&quot;z_bv&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_43&quot;:[&quot;z_by&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_46&quot;:[&quot;z_cb&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_49&quot;:[&quot;z_ce&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_52&quot;:[&quot;z_ch&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_55&quot;:[&quot;z_ck&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_58&quot;:[&quot;z_cn&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_61&quot;:[&quot;z_cq&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_64&quot;:[&quot;z_ct&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_67&quot;:[&quot;z_cw&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_70&quot;:[&quot;z_cz&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_73&quot;:[&quot;z_dc&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_76&quot;:[&quot;z_df&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_79&quot;:[&quot;z_di&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_82&quot;:[&quot;z_dl&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_85&quot;:[&quot;z_do&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_88&quot;:[&quot;z_dr&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_91&quot;:[&quot;z_du&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_94&quot;:[&quot;z_dx&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_97&quot;:[&quot;z_ea&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_100&quot;:[&quot;z_ed&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_103&quot;:[&quot;z_eg&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_106&quot;:[&quot;z_ej&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_109&quot;:[&quot;z_em&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_112&quot;:[&quot;z_ep&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_115&quot;:[&quot;z_es&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_118&quot;:[&quot;z_ev&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_121&quot;:[&quot;z_ey&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_124&quot;:[&quot;z_fb&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_127&quot;:[&quot;z_fe&quot;,&quot;Container&quot;,[0,0,0,1,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1]},&quot;dg_showgrade&quot;:{&quot;ctl_2&quot;:[&quot;z_g&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_5&quot;:[&quot;z_k&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_8&quot;:[&quot;z_n&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_11&quot;:[&quot;z_q&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_14&quot;:[&quot;z_t&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_17&quot;:[&quot;z_w&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_20&quot;:[&quot;z_z&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_23&quot;:[&quot;z_bc&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_26&quot;:[&quot;z_bf&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_29&quot;:[&quot;z_bi&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_32&quot;:[&quot;z_bl&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_35&quot;:[&quot;z_bo&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_38&quot;:[&quot;z_bs&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_41&quot;:[&quot;z_bw&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_44&quot;:[&quot;z_bz&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_47&quot;:[&quot;z_cc&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_50&quot;:[&quot;z_cf&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_53&quot;:[&quot;z_ci&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_56&quot;:[&quot;z_cl&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_59&quot;:[&quot;z_co&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_62&quot;:[&quot;z_cr&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_65&quot;:[&quot;z_cu&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_68&quot;:[&quot;z_cx&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_71&quot;:[&quot;z_da&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_74&quot;:[&quot;z_dd&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_77&quot;:[&quot;z_dg&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_80&quot;:[&quot;z_dj&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_83&quot;:[&quot;z_dm&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_86&quot;:[&quot;z_dp&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_89&quot;:[&quot;z_ds&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_92&quot;:[&quot;z_dv&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_95&quot;:[&quot;z_dy&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_98&quot;:[&quot;z_eb&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_101&quot;:[&quot;z_ee&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_104&quot;:[&quot;z_eh&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_107&quot;:[&quot;z_ek&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_110&quot;:[&quot;z_en&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_113&quot;:[&quot;z_eq&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_116&quot;:[&quot;z_et&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_119&quot;:[&quot;z_ew&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_122&quot;:[&quot;z_ez&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_125&quot;:[&quot;z_fc&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;ctl_128&quot;:[&quot;z_ff&quot;,&quot;DisplayGroup&quot;,[1],{},0,1]},&quot;lbl_view&quot;:{&quot;ctl_3&quot;:[&quot;z_h&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_6&quot;:[&quot;z_l&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_9&quot;:[&quot;z_o&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_12&quot;:[&quot;z_r&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_15&quot;:[&quot;z_u&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_18&quot;:[&quot;z_x&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_21&quot;:[&quot;z_ba&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_24&quot;:[&quot;z_bd&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_27&quot;:[&quot;z_bg&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_30&quot;:[&quot;z_bj&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_33&quot;:[&quot;z_bm&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_36&quot;:[&quot;z_bp&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_39&quot;:[&quot;z_bt&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_42&quot;:[&quot;z_bx&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_45&quot;:[&quot;z_ca&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_48&quot;:[&quot;z_cd&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_51&quot;:[&quot;z_cg&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_54&quot;:[&quot;z_cj&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_57&quot;:[&quot;z_cm&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_60&quot;:[&quot;z_cp&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_63&quot;:[&quot;z_cs&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_66&quot;:[&quot;z_cv&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_69&quot;:[&quot;z_cy&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_72&quot;:[&quot;z_db&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_75&quot;:[&quot;z_de&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_78&quot;:[&quot;z_dh&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_81&quot;:[&quot;z_dk&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_84&quot;:[&quot;z_dn&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_87&quot;:[&quot;z_dq&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_90&quot;:[&quot;z_dt&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_93&quot;:[&quot;z_dw&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_96&quot;:[&quot;z_dz&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_99&quot;:[&quot;z_ec&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_102&quot;:[&quot;z_ef&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_105&quot;:[&quot;z_ei&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_108&quot;:[&quot;z_el&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_111&quot;:[&quot;z_eo&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_114&quot;:[&quot;z_er&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_117&quot;:[&quot;z_eu&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_120&quot;:[&quot;z_ex&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_123&quot;:[&quot;z_fa&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_126&quot;:[&quot;z_fd&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_129&quot;:[&quot;z_fg&quot;,&quot;Label&quot;,[],{},0,1]}}]" />
+							<input type="hidden" name="d2l_state" value="[{&quot;3&quot;:[&quot;grid&quot;,&quot;pagesize&quot;,&quot;htmleditor&quot;,&quot;hpg&quot;],&quot;1&quot;:[&quot;gridpagenum&quot;,&quot;search&quot;,&quot;pagenum&quot;],&quot;2&quot;:[&quot;lcs&quot;]},[]]" />
+							<input type="hidden" name="d2l_referrer" value="eMZpjYudDKxyMRV4tsdhaeb6Sjm88niB" />
+						</div>
+					</form>
+				</div></div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="clear"></div>
+<script>
+	UI.Init();
+	D2L.OR["__gctl_1"] = {};
+	D2L.OR["__gctl_1"]["0"]="{\"_type\":\"func\",\"N\":\"D2L.PT.Auth.SessionTimeout.Init\",\"P\":[\"501517\",180,5,{\"_type\":\"id\",\"Value\":\"d2l_sessionExpiryWarning\"},\"d2l_sessionExpiryAlert\",\"d2l_sessionExpiryCheck\",{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.ConnectObject\",\"P\":[\"POST\",{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/auth\/session\/extend\"}],\"D\":true},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.OpenHelper\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Html.Dom.GetActiveElement\"},{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/auth\/session\/Expired?isLogout=0&isUsernamePasswordLogin=0&userId=501517\"}],\"D\":true},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.OpenHelper\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Html.Dom.GetActiveElement\"},{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/auth\/session\/Expired?isLogout=1&isUsernamePasswordLogin=0&userId=501517\"}],\"D\":true},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.InlineDialog\",\"P\":[null,{\"_type\":\"id\",\"Value\":\"d2l_1_0_347\"},\"Warning\",\"New User Session\",\"The current user session has changed, so the links and content on this page may not behave as expected.\",\"OK\",\"\",\"Close this Dialog\",\"d2l-dialog-inline-body-warning\",true,false,false],\"D\":true},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.Inline.Abort\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_0_347\"}]}]}";
+	D2L.O("__gctl_1",0)()
+	D2L.OR["__gctl_1"]["1"]="{\"_type\":\"func\",\"N\":\"D2LMathML.DesktopInit\",\"P\":[\"https:\/\/s.brightspace.com\/lib\/mathjax\/2.7.4\/MathJax.js?config=MML_HTMLorMML\",\"https:\/\/s.brightspace.com\/lib\/mathjax\/2.7.4\/MathJax.js?config=TeX-AMS-MML_HTMLorMML%2cSafe\",130,false]}";
+	D2L.O("__gctl_1",1)()
+	D2L.OR["__gctl_1"]["2"]="{\"_type\":\"func\",\"N\":\"D2L.LP.Web.Authentication.Xsrf.Init\",\"P\":[\"d2l_referrer\",\"eMZpjYudDKxyMRV4tsdhaeb6Sjm88niB\",-2088619791]}";
+	D2L.O("__gctl_1",2)()
+	D2L.OR["__gctl_1"]["3"]="{\"_type\":\"func\",\"N\":\"D2L.LP.ActivityBar.Init\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/activityFeed\/checkForNewAlerts\"},120]}";
+	D2L.O("__gctl_1",3)()
+	D2L.OR["__gctl_1"]["4"]="{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.MessageArea.Init\",\"P\":[\"d2l_messagearea\",{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/validation\/errors\"}]}";
+	D2L.O("__gctl_1",4)()
+	D2L.OR["__gctl_1"]["5"]="{\"_type\":\"func\",\"N\":\"D2L.LP.Globalization.Locale.Init\",\"P\":[{\"_type\":\"anon\",\"DecimalSeparator\":\".\",\"GroupSeparator\":\",\",\"NumberNegativePattern\":1,\"PercentPositivePattern\":0,\"PercentNegativePattern\":0,\"PercentSymbol\":\"%\",\"NegativeSign\":\"-\",\"NativeDigits\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"],\"UseNativeDigits\":false,\"GroupSizes\":[3],\"IntegerRegex\":\"^([\\\\(-]*(([01234567890123456789]?[01234567890123456789]?([01234567890123456789](,[01234567890123456789][01234567890123456789][01234567890123456789])*)?))[\\\\)-]*)$|^([\\\\(-]*[01234567890123456789]+[\\\\)-]*)$\",\"DecimalRegex\":\"^([\\\\(-]*(([01234567890123456789]?[01234567890123456789]?([01234567890123456789](,[01234567890123456789][01234567890123456789][01234567890123456789])*)))(\\\\.[01234567890123456789]+)?[\\\\)-]*)$|^([\\\\(-]*[01234567890123456789]*\\\\.?[01234567890123456789]+[\\\\)-]*)$\"},{\"_type\":\"anon\",\"InputDateFormat\":\"M\/d\/yyyy\",\"Is24HourClock\":false,\"NativeDigits\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"],\"UseNativeDigits\":false,\"TimeFormat\":\"h:mm tt\",\"AmDesignator\":\"AM\",\"PmDesignator\":\"PM\",\"FirstDayOfWeek\":0,\"ShortMonthNames\":[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\",\"\"],\"LongMonthNames\":[\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\",\"\"],\"ShortDayOfWeekNames\":[\"Sun\",\"Mon\",\"Tue\",\"Wed\",\"Thu\",\"Fri\",\"Sat\"]},{\"_type\":\"anon\",\"TextDirection\":1},{\"_type\":\"anon\",\"Culture\":\"en-ca\"},{\"_type\":\"anon\",\"JustNow\":\"just now\",\"OneMinuteAgo\":\"1 minute ago\",\"TwoMinutesAgo\":\"2 minutes ago\",\"MinutesAgoMany\":\"[0] minutes ago\",\"OneHourAgo\":\"1 hour ago\",\"TwoHoursAgo\":\"2 hours ago\",\"ManyHoursAgo\":\"[0] hours ago\",\"YesterdayTime\":\"yesterday at [0]\",\"DayOfWeekTime\":\"[0] at [1]\",\"MonthDayTime\":\"[0] at [1]\",\"Now\":{\"_type\":\"D2L.LocalDateTime\",\"Year\":2021,\"Month\":12,\"Day\":20,\"Hour\":11,\"Minute\":41,\"Second\":26,\"Millisecond\":662}}]}";
+	D2L.O("__gctl_1",5)()
+	D2L.OR["__gctl_1"]["6"]="{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.Initialize\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/login?target=%2fd2l%2flms%2fgrades%2fmy_grades%2fmain.d2l%3fou%3d204496&sessionExpired=1\"},\"Error: unable to complete your request.\",{\"_type\":\"D2L.LP.Util.Dictionary\"},{\"_type\":\"D2L.LP.Util.Dictionary\",\"flash\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.FlashMessages.RpcReceivePayloadProvider\"},\"session\":{\"_type\":\"func\",\"N\":\"D2L.PT.Auth.SessionTimeout.RpcReceivePayloadProvider\"},\"messageArea\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.MessageArea.RpcReceivePayloadProvider\"},\"OR\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.ObjectRepository.RpcReceivePayloadProvider\"},\"JS\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.RpcReceiveJsPayloadProvider\"},\"CSS\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.RpcReceiveCssPayloadProvider\"},\"BSI\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Bsi.RpcReceiveJsPayloadProvider\"},\"ariaMessages\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Aria.RpcReceivePayloadProvider\"}}]}";
+	D2L.O("__gctl_1",6)()
+	D2L.OR["__gctl_1"]["7"]="{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.InlineHelp.Init\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/inlineHelp\/204496\/help\"}]}";
+	D2L.O("__gctl_1",7)()
+	D2L.OR["d2l_1_1_366"] = {};
+	D2L.OR["d2l_1_1_366"]["0"]="{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}";
+	D2L.OR["d2l_1_2_613"] = {};
+	D2L.OR["d2l_1_2_613"]["0"]="{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}";
+	D2L.OR["d2l_1_3_192"] = {};
+	D2L.OR["d2l_1_3_192"]["0"]="{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}";
+	D2L.OR["d2l_1_4_640"] = {};
+	D2L.OR["d2l_1_4_640"]["0"]="{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}";
+	D2L.OR["__gctl_54"] = {};
+	D2L.OR["__gctl_54"]["0"]="{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.ReturnPoints.Set\",\"P\":[\"D2L.UXP.Profile.501517\"]}";
+	D2L.OR["__gctl_54"]["1"]="{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.ReturnPoints.Set\",\"P\":[\"D2L.LP.Notification.Settings.204496\"]}";
+	D2L.OR["__gctl_54"]["2"]="{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.ReturnPoints.Set\",\"P\":[\"D2L.UXP.Preferences.204496\"]}";
+	D2L.OR["__gctl_54"]["3"]="{\"_type\":\"func\",\"N\":\"D2L.PT.Auth.Logout\",\"P\":[\"\/d2l\/logout\"]}";
+	D2L.OR["d2l_1_6_464"] = {};
+	D2L.OR["d2l_1_6_464"]["select"]="{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.OpenWindow\",\"P\":[\"https:\/\/iweb.langara.bc.ca\/lts\/brightspace\/how-to-use-brightspace\/\",{\"_type\":\"url\",\"Url\":\"https:\/\/iweb.langara.bc.ca\/lts\/brightspace\/how-to-use-brightspace\/\"},0,0,true,true,null,true]}";
+	D2L.OR["d2l_1_7_320"] = {};
+	D2L.OR["d2l_1_7_320"]["select"]="{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.OpenWindow\",\"P\":[\"https:\/\/iweb.langara.bc.ca\/lts\/brightspace\/how-to-use-brightspace\/\",{\"_type\":\"url\",\"Url\":\"https:\/\/iweb.langara.bc.ca\/lts\/brightspace\/how-to-use-brightspace\/\"},0,0,true,true,null,true]}";
+	D2L.OR["d2l_1_17_288"] = {};
+	D2L.OR["d2l_1_17_288"]["select"]="{\"_type\":\"func\",\"N\":\"PrintUserGrades\"}";
+	D2L.OR["__gctl_55"] = {};
+	D2L.OR["__gctl_55"]["0"]="{\"_type\":\"func\",\"N\":\"PrintUserGrades\"}";
+	function gotoGrades() { gotoManageGrades(); }
+
+</script>
+<script>D2L.LP.Web.UI.Html.Bsi.Init('prod', 'https://s.brightspace.com/lib/webcomponentsjs/2.4.4/', false, 'https://s.brightspace.com/lib/regenerator-runtime/0.13.5/runtime.js', 'https://s.brightspace.com/lib/bsi/20.21.11-188/', ['https://s.brightspace.com/lib/bsi/20.21.11-188/unbundled/icon.js','https://s.brightspace.com/lib/bsi/20.21.11-188/unbundled/d2l-table.js','https://s.brightspace.com/lib/bsi/20.21.11-188/unbundled/d2l-navigation.js','https://s.brightspace.com/lib/bsi/20.21.11-188/unbundled/d2l-navigation-main-header.js','https://s.brightspace.com/lib/bsi/20.21.11-188/unbundled/d2l-navigation-button-notification-icon.js','https://s.brightspace.com/lib/bsi/20.21.11-188/unbundled/d2l-navigation-separator.js','https://s.brightspace.com/lib/bsi/20.21.11-188/unbundled/d2l-navigation-link-image.js','https://s.brightspace.com/lib/bsi/20.21.11-188/unbundled/dropdown.js','https://s.brightspace.com/lib/bsi/20.21.11-188/unbundled/dropdown-content.js','https://s.brightspace.com/lib/bsi/20.21.11-188/unbundled/d2l-navigation-button.js','https://s.brightspace.com/lib/bsi/20.21.11-188/unbundled/d2l-profile-image-base.js','https://s.brightspace.com/lib/bsi/20.21.11-188/unbundled/d2l-navigation-main-footer.js','https://s.brightspace.com/lib/bsi/20.21.11-188/unbundled/dropdown-menu.js','https://s.brightspace.com/lib/bsi/20.21.11-188/unbundled/menu.js','https://s.brightspace.com/lib/bsi/20.21.11-188/unbundled/menu-item-link.js','https://s.brightspace.com/lib/bsi/20.21.11-188/unbundled/menu-item.js','https://s.brightspace.com/lib/bsi/20.21.11-188/unbundled/d2l-navigation-band.js','https://s.brightspace.com/lib/bsi/20.21.11-188/unbundled/dropdown-more.js','https://s.brightspace.com/lib/bsi/20.21.11-188/unbundled/button-subtle.js']);</script>
+</body>
+</html>
