@@ -1,0 +1,2 @@
+
+  sete = set(half1)
