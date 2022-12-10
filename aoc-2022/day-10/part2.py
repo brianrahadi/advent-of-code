@@ -10,16 +10,16 @@ for line in file:
 
   # perform no matter if noop or addx
   if cycle % 40 in {value, value+1, value+2}: # check if cycle % 40 is equal to one of these 3 values
-      string += "#"
+      string += "█"
   else:
-      string += "."
+      string += " "
   cycle += 1
 
   if words[0] == "addx":
     if cycle % 40 in {value, value + 1, value+2}: # check if cycle % 40 is equal to one of these 3 values
-      string += "#"
+      string += "█"
     else:
-      string += "."
+      string += " "
     value += int(words[1])
     cycle += 1
   
